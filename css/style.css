@@ -1,0 +1,400 @@
+*{
+    padding: 0px;
+    margin-left: 2px;
+    margin-right:2px;
+    
+}
+
+body{
+    background-color: #f8f9fa;
+    
+}
+
+#information{
+    background-color:#011627;
+    width: auto;
+    height: 80px;
+    display: flex;    
+}
+
+#info{
+    /*background-color: crimson;*/
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+}
+
+#info h1{
+    text-transform:capitalize;
+    font-size: 50px;
+    color:white;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar{
+    height:50px;
+    background-color:#011627;
+    display: flex;
+    text-align: center;
+    margin-bottom:1px;    
+}
+
+#navbar li{
+    /*background-color:red;*/
+    display: inline-block;
+    width: 14%;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;      
+}
+
+#navbar a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:white;
+    font-size: 18px;   
+}
+
+#navbar a:hover{
+    font-size: 25px;
+    color:#219ebc;
+}
+
+#banner{
+    background-color:#eff1ed;
+    height: auto;
+    width: auto;
+}
+
+#contact_content #address{
+    background-color: burlywood;
+    background-color:#edf2f4;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#correspondence{
+    background-color:#011627;
+    color: white;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#address p{
+    /*background-color: aquamarine;*/
+    color: #0d1b2a;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px; 
+    
+}
+
+/* table styles*/
+
+#qualification_table, #contact_details{
+    /*margin-left: 50px;*/
+    background-color: #edf2f4;
+    border-radius: 10px;
+}
+#contact_details p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    padding-left: 20px;
+}
+#qualification_table h2{
+    color:white;
+    background-color: #011627;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.edu{
+    text-transform: uppercase;
+    
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+table{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    margin: auto;
+}
+th{
+    padding: 10px;
+   /* border-style: solid;
+    border-color: #0d1b2a;
+    border-width: 2px;*/
+}
+td{
+    padding: 10px;
+    text-align: center;
+}
+td:hover{
+    color: red;
+}
+.even{
+    background-color: #eff1ed;
+}
+.odd{
+    background-color: white;
+}
+
+#email, #linkedin{
+    text-decoration: none;
+}
+
+#footer{
+    width: auto;
+    background-color:#011627;
+    display: flex;
+    font-family:Arial, Helvetica, sans-serif;  
+}
+
+#sec1{
+    text-align: center;
+    color: #219ebc;
+    margin: auto;
+    /*background-color: antiquewhite;*/  
+}
+
+/* prject page styles starts here*/
+/*project 1*/
+#project_pro1{
+    /*background-color: aqua;*/
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#project_pro1 #project_title{
+    color:white;
+    font-size: 20px;
+    background-color: #011627;
+    padding: 10px;
+    border-radius: 10px;
+}
+#project_pro1 #project_info{
+    background-color: #edf2f4;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+}
+
+/*Project 2*/
+#project_pro2{
+    /*background-color: aqua;*/
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#project_pro2 #project_title{
+    color:white;
+    font-size: 20px;
+    background-color: #011627;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#project_pro2 #project_info{
+    background-color: #edf2f4;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+}
+
+/*Project 3*/
+#project_pro3{
+    /*background-color: aqua;*/
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#project_pro3 #project_title{
+    color:white;
+    font-size: 20px;
+    background-color: #011627;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#project_pro3 #project_info{
+    background-color: #edf2f4;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+}
+
+/*prject page styles ends here*/
+
+/*about page styles starts here*/
+
+#about_content h1{
+    background-color:#011627;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:white;
+    text-transform:capitalize;
+    /*text-decoration: underline;*/
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    /*border-top-left-radius: 10px;
+    border-top-right-radius: 10px;*/
+
+}
+
+#about_content #skills {
+    background-color: #edf2f4;
+    width: auto;
+    /*height: 200px;*/
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /*margin: 50px;*/
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+ul{
+    list-style: none;
+}
+#about_content #skills #grp1{
+    height: 90%;
+    width: 20%;
+    /*background-color:cadetblue;*/
+    margin: auto;
+    padding: 20px;
+}
+
+#about_content #skills #grp2{
+    height: 90%;
+    width: 20%;
+    /*background-color:rebeccapurple;*/
+    margin: auto;
+    padding: 20px;
+
+}
+#about_content #skills #grp3{
+    height: 90%;
+    width: 20%;
+    /*background-color:lavender;*/
+    margin: auto;
+    padding: 20px;
+
+}
+#about_content #skills #grp4{
+    height: 90%;
+    width: 20%;
+    /*background-color:lavender;*/
+    margin: auto;
+    padding: 20px;
+}
+
+#about_content #skills #grp5{
+    height: 90%;
+    width: 20%;
+    /*background-color:lavender;*/
+    margin: auto;
+    padding: 20px;
+}
+
+/*Photograph style*/
+
+
+
+#about_me #photograph{
+    width: 240px;
+    height: 240px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color:#011627;
+    margin-right: 20px;
+    float: left;
+}
+
+#about_me #intro{
+    margin-top: 20px;
+    width: auto;
+    height: auto;
+    background-color:#edf2f4;
+    
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+    padding-bottom: 80px;
+    
+
+}
+
+#about_me #intro #resume{
+    font-size: 20px;
+    color:navy;
+    text-decoration:none;
+}
+
+
+/*home/ index page styles*/
+
+
+#index_content #index_banner{
+    width: auto;
+    height: 480px;
+    background-color:rgb(195, 240, 236);
+    /*margin-left:2px;
+    margin-right:2px;*/
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+
+/*blog styles start*/
+#blog{
+    background-color:rgb(195, 240, 236);
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#blog #blog_title{
+    color:white;
+    font-size: 20px;
+    background-color: #011627;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#blog #blog_info{
+    background-color: #edf2f4;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+}
+
+#blog ol{
+    padding-left:20px ;
+}
+
+/*blog style end*/
+
+
