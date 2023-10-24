@@ -392,9 +392,23 @@ ul{
 }
 
 #blog ol{
-    padding-left:20px ;
+    padding-left:40px ;
 }
-
+#blog ul{
+    padding-left:40px ;
+    list-style:disc;
+}
+#blog h3{
+   /* text-decoration: underline;*/
+    color: crimson;
+}
+#blog h4{
+    /*text-decoration: underline;*/
+    color:indigo;
+}
+#blog dl{
+    list-style: upper-roman;
+}
 /*blog style end*/
 
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact</title>
+    <title>blogs</title>
     <link href="../css/style.css"  type="text/css" rel="stylesheet">
 </head>
 <body>
@@ -70,22 +70,41 @@
         <!--Blog 4-->
         <div id="blog">
             <div id="title">
-                <h1 id="blog_title"> Blog-4 (Big Data)</h1>
+                <h1 id="blog_title"> Blog-4 (Big Data Management and Analytics)</h1>
             </div>
             
             <div id="blog_info">
+                <h3>Failure of traditional database management system- <b>Advent of Big Data</b></h3>
+                <p>
+                    
+                    <ul>
+                    <li>Not being capable of storing huge amount of data generated at PetaByte scale per unit of time (day or may be hour).</li>
+                    <li>Incapability of handling Semi-structured and Unstructured data (Nearly 80% of data are unstructured)</li>
+                    <li>Processing complexity.</li>
+                </ul></p>
                 <h3>Big Data</h3>
-                <p>Data for which traditional database management systems fail because of its complexity. <br>
-                <h4>Challenges of Big Data: 5'Vs defining Big Data</h4>
+                <p>Data for which traditional database management systems fail because of its complexity. Big data is just an advancement in the field of database management systems. <br>
+
+                <h4>Challenges posed by Big Data: 5'Vs defining Big Data</h4>
                 <dl>
                     <b><dt>Volume</dt></b><dd>Data in the range of >PetaBytes (PB).</dd>
                     <b><dt>Variety</dt></b><dd>Structured (Relational Table), Unstructured (Audio, Video, Images, Text-files) and Semi-structured(XML, JSON)</dd>
-                    <b><dt>Velocity</dt></b><dd>Rate of Generation of Data</dd>
+                    <b><dt>Velocity</dt></b><dd>Not only rate of Generation of Data but also computational speed. Both shoul match.</dd>
                     <b><dt>Veracity</dt></b><dd>Data in doubt- authenticity, reliability and correctness.</dd>
-                    <b><dt>Value</dt></b>
+                    <b><dt>Value</dt></b><dd>How to derive value from this so complex data.</dd>
                 </b>
                 </p>
-                <h3>Big Data Infrastructure- Hadoop, tools and technologies for storage, Processing</h3>
+                <h3>Sources of Big Data</h3>
+                <p> Some of them are: 
+                    <ol>
+                        <li>Ubiqutous Computing (IoT Sensors)</li>
+                        <li>HealthCare - Electronic Health Reacords (EHRs)</li>
+                        <li>Blackboxes</li>
+                        <li>Web</li>
+                        <li>Organizational Data</li>
+                    </ol>
+                </p>
+                <h3>Big Data Infrastructure, <u>Hadoop</u>- tools and technologies for storage, Processing</h3>
                 
                 <p><b>Hadoop</b> is a <u>open-source framework</u> for <u>distributed storage</u> (on commodity clusters) and for processing the huge volume 
                     (>PBs, that traditional database systems can't handle) of <u>heterogeneous</u> (structured, semistructured and unstructured)
@@ -125,7 +144,7 @@
             </div>
             
             <div id="blog_info">
-                <p></p><h3>Data Science Stages</h3>
+                <h3>Data Science Stages</h3>
                 <b><ol>
                     <li>Data Generation</li>
                     <li>Data Aggregation/ Capturing/ Acquisition</li>
@@ -149,8 +168,99 @@
             </div>
             <br>
             </div>
-         <!--Blog dummy-->
+         <!--Blog 6-->
         <div id="blog">
+            <div id="title">
+                <h1 id="blog_title"> Blog-6 (Classification)</h1>
+            </div>
+            
+            <div id="blog_info">
+                <h3>Classification</h3>
+                
+                    <ul>
+                        <li>Extracts models (called classifiers) describing important data classes(discrete, unordered and categorical or nominal)</li>
+                        <li>Supervised learning (output or class lables are also present with features)</li>
+                    </ul>
+
+                <h3>Two Steps of Classification</h3>
+                <ol>
+                    <li><b>Learning Step= Training + Testing:</b>Construct classification model based on previous data and test Performance Metrics on both training 
+                        data and test data.</li>
+                    <li><b>Classification Step:</b> If model is good enough (depends on situation), Use to predict/classify the classes of unseen data.</li>
+                </ol>
+                <p>Classifiers can be represented by <u>Classification rules, decision trees or mathematical formulae.</u></p>
+                <h3>Learning Step</h3>
+                <p>Roughly we divide the data set into two parts: <u>training set and test set.</u> We use training set to train/construct our model
+                and test set to assess our model based on performance metrics such as accuracy, precision, recall F1-score etc.</p>
+                 <h3>Decision Tree Induction- learning of decision tree</h3> 
+                 <p>A decision tree is a tree like (hierarchical) structure in which an internal node represents a test and the branch associated with node represents an outcome of
+                    the test and leaf nodes represent classes.
+
+                 </p>
+                 <h4>How to construct decision tree?</h4>
+                 <h5>Some concepts from Information Theory.</h5>
+                 <p><b>Information:</b> Reduction in Uncertainty. When we get some information the contextual uncertainty is reduced. <br>
+                 <b>Entropy:</b>Measure of Randomness or Uncertainty in data. There are various measures of entropy, for example Shannon's Entropy, Gini Index.
+                    </p>
+                    <h3>Idea behind Construction of Decision Tree</h3>
+                    <p> As we go from root node to leaf node We should proceed from Uncertainty to Certainty and as soon as possible (least possible height of decision tree). So select 
+                        the first attribute to be tested such that resulting partitions of data are as pure/homogeneous as possible. A partition is pure is all tuples belong
+                        to same class.<b>The difference between uncertainty of the data set and sum of the uncertainty of all partitions based on some attribute
+                        is maximum.</b> Then that attribute should be tested first- this will reduce the height of decision tree. This is called <b>Attribute Selection.</b>
+                        There are various attribute selection measure- information gain, gain ratio and Gini Index. Decision tree induction is based on <b>heuristic search approach-</b>
+                         in which guiding factors are various attribute selection measures. 
+                    </p>
+                    <h3>Three decision tree Induction Algorithms</h3>
+                    <ol>
+                        <li><b>ID3 (Iterative Dichotomiser)</b></li><p>Developed by J. Ross Quinlan in early 1980s. <br>
+                            Uses Information Gain as  attribute selection measure.</p>
+                        <li><b>C4.5 (Successer of ID3)</b></li><p>Developed by J. Ross Quinlan <br>
+                        Uses Information Ratio as attribute selection measure.</p>
+                        <li><b>CART (Classification and regression Trees)</b></li><p>Developed by a group of Statisticians (L. Breiman, J. Friedman, R. Olshen, C. Stone) <br>
+                        Uses Gini Index as attribute selection measure.</p>
+                    </ol>
+                    <p>All the above adopt a <u>greedy (i.e., non-backtracking) divide and conquer top-down appoach</u> to construct decision tree.</p>
+
+                    <h4><b>Information Gain</b></h4>
+                    <p><b>Classification Setting:</b> Suppose a dataset D with n attributes (A<sub>i</sub>'s; i=1,2,...,n) and there are m classes (C<sub>i</sub>'s; i=1,2,...,m).
+                    p<sub>i</sub>'s are proportions of each class. p<sub>i</sub>=|C<sub>i,D</sub>|/|D|.</p>
+                    <p>Information Gain is defined as differece between the original information requirement (i.e., based on just proportion of classes) and the
+                         new requirement (i.e., obtained after partitioning on attribute A)</p>
+                         <p>Expected Information need to classify a tuple in D, <br>
+                        <b>Info(D)= &Sigma;<sub>i=1</sub> <sup>m</sup> p<sub>i</sub>*log(<sub>i</sub>)</b></p>
+                <b>Topic: </b><i>Machine Learning</i><br>
+                <b>Keywords: </b><i>Write keywords here...</i><br>
+                <b>Written by: </b><i>Shankul Patel</i><br>
+                <b>Dated: </b>22/10/2023.<br>
+            </div>
+            <br>
+            </div>
+         <!--Blog 6-->
+         <div id="blog">
+            <div id="title">
+                <h1 id="blog_title"> Blog-6 (Machine Learning Overview)</h1>
+            </div>
+            
+            <div id="blog_info">
+                <h3>Forms of Learning</h3>
+                <ol>
+                    <li><b>Supervised Learning</b></li><p>Both input and output are present. Examples are Classification and Linear Resgression. <br>
+                        <b>Regression:</b> A supervised learning in which model <u>predicts the continuous, ordered numerical value</u>.
+                    </p>
+                    <li><b>Unsupervised Learning</b></li><p>Only input is present no supervising output is present. Example is Clustering.<p>
+                    <li><b>Semi-supervised Learning</b></li><p></p>
+                    <li><b>Reinforcement learning</b></li><p></p>
+                </ol>
+                
+                <b>Topic: </b><i>Machine Learning</i><br>
+                <b>Keywords: </b><i>Machine Learning</i><br>
+                <b>Written by: </b><i>Shankul Patel</i><br>
+                <b>Dated: </b>22/10/2023.<br>
+            </div>
+            <br>
+            </div>
+            <!--Blog dummy-->
+         <div id="blog">
             <div id="title">
                 <h1 id="blog_title"> Blog-x (title)</h1>
             </div>
@@ -163,7 +273,7 @@
                 <b>Dated: </b>15/10/2023.<br>
             </div>
             <br>
-            </div>
+        </div>
             <br>
         <div id="footer">
             <div id="sec1">
