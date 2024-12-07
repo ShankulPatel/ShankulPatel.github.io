@@ -101,7 +101,7 @@ body{
 
 /* table styles*/
 
-#qualification_table, #contact_details{
+#qualification_table, #contact_details, #certificates{
     /*margin-left: 50px;*/
     background-color: #edf2f4;
     border-radius: 10px;
