@@ -412,3 +412,50 @@ ul{
 /*blog style end*/
 
 
+
+/* profile */
+.profile-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: auto;
+    margin: 20px auto;
+    background-color:#edf2f4;
+}
+.profile-image {
+    width: 200px;
+    height: 230px;
+    border-radius: 5%;
+    border: 2px solid #4CAF50;
+    margin-right: 20px;
+}
+.profile-bio {
+    flex: 1;
+    margin-top: 20px;
+    width: auto;
+    height: auto;
+    
+    
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+    padding-bottom: 80px;
+}
+.profile-name {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+}
+.profile-description {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+#resume{
+    font-size: 20px;
+    color:navy;
+    text-decoration:none;
+}
