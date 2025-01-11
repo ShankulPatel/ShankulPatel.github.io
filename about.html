@@ -3,305 +3,616 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about</title>
-    <link href="../css/style.css"  type="text/css" rel="stylesheet">
+    <title>Shankul Patel</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        h1, h3, h4 {
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        #navbar {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 12px 0;
+            margin: 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+        #navbar li {
+            margin: 0 25px;
+        }
+        #navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px; /* Increased font size */
+            font-weight: 500;
+            padding: 8px 16px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+        #navbar a:hover {
+            background-color: #007bff;
+            border-radius: 4px;
+        }
+
+        /* Main Content */
+        #content {
+            padding: 30px 5%;
+        }
+
+        /* Profile and Bio Layout */
+        .profile-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .profile-left {
+            width: 20%;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+        .profile-right {
+            width: 78%;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .profile-left img {
+            width: 180px;
+            height: 180px;
+            border-radius: 5%;
+            margin-bottom: 5px;
+        }
+        .profile-left h1 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .profile-right h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .profile-right p {
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        /* Skills Section */
+        .skills-section {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .skills-section h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .skills-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .skills-category {
+            width: 25%;
+            margin-bottom: 15px;
+        }
+        .skills-category h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+        .skills-category ul {
+            list-style: none;
+        }
+        .skills-category li {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+
+        /* Educational Qualifications Section */
+        .education-section {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .education-section h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .education-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        .education-table th,
+        .education-table td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .education-table th {
+            background-color: #f7f7f7;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .education-table td {
+            font-size: 16px;
+        }
+
+        /* Other Qualifications Section */
+        .other-qualifications {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .other-qualifications h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .other-qualifications ul {
+            list-style: none;
+        }
+        .other-qualifications li {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+
+        /* Certificates Section */
+        .certificates-section {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .certificates-section h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .certificates-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        .certificates-table th,
+        .certificates-table td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .certificates-table th {
+            background-color: #f7f7f7;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .certificates-table td {
+            font-size: 16px;
+        }
+        .certificates-table a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .certificates-table a:hover {
+            color: #0056b3;
+        }
+
+        /* Research Publications Section */
+        .research-publications {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .research-publications h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .research-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        .research-table th,
+        .research-table td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .research-table th {
+            background-color: #f7f7f7;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .research-table td {
+            font-size: 16px;
+        }
+        .research-table a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .research-table a:hover {
+            color: #0056b3;
+        }
+
+        /* Correspondence Details Section */
+        .correspondence-details {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .correspondence-details h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .correspondence-details p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+            line-height: 1;
+        }
+        .correspondence-details a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .correspondence-details a:hover {
+            color: #0056b3;
+        }
+
+        /* Footer */
+        #footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 5%;
+            font-size: 14px;
+            margin-top: 10px;
+            border-top: 1px solid #007bff;
+            line-height: 1;
+        }
+
+        .footer-content p {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .footer-links a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #0056b3;
+        }
+
+        .footer-links {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
-  <div id="information">
-    <div id="info">
-        <h1>About</h1>
-    </div>
-  </div>
-    
-    
-      
-        <ul id="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-           <!--<li><a href="#"></a></li>-->
-            <li><a href="research.html">Research</a></li>
-            <li><a href="blogs.html">Blogs</a></li>
-           
-        </ul>
 
+    <!-- Navbar -->
+    <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="literature.html">Literature</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+    </ul>
+
+    <!-- Main Content -->
+    <div id="content">
+
+        <!-- Profile and Bio Section -->
         <div class="profile-container">
-            <img src="../src/myPhoto.jpg" alt="Profile Image of Shankul Patel" class="profile-image">
-            <div class="profile-bio">
-                <h1 class="profile-name">Shankul Patel</h1>
-                <p class="intro">
-                    <p>Greetings! Thanks for visiting my personal website. My name is Shankul Patel, from <b>Uttar Pradesh</b>, currently pursuing <b>Master of Technoloy (MTech) in Data Science</b>
-                        from <b>Jawaharlal Nehru University (JNU) New Delhi</b>. I'm more passionate to work in research field of Artificial Intelligence.
-                    Before my M Tech I did <b>Master of Computer Application (MCA)</b> from JNU New Delhi (Batch- 2021-23). My Interests are teaching, exploring new areas
-                from the perspective of computer science student. Thank you. Here is my resume attached. <a id="resume" href="../src/shankul_patel_resume.pdf">Resume</a></p>
-                
-                </p>
+            <!-- Profile Left -->
+            <div class="profile-left">
+                <img src="../src/myPhoto.jpg" alt="Profile Image of Shankul Patel">
+                <h1>Shankul Patel</h1>
+            </div>
+            <!-- Bio Right -->
+            <div class="profile-right">
+                <h3>Bio</h3>
+                <p>Greetings! Thanks for visiting my personal website. My name is Shankul Patel, from <b>Uttar Pradesh</b>, currently pursuing <b>Master of Technology (MTech) in Data Science</b>
+                from <b>Jawaharlal Nehru University (JNU) New Delhi</b>. I'm passionate about working in the research field of Artificial Intelligence.</p>
+                <p>Before my MTech, I did <b>Master of Computer Application (MCA)</b> from JNU New Delhi (Batch 2021-23). My interests include teaching and exploring new areas from the perspective of a computer science student. Thank you for visiting! Here is my resume attached: <a href="../src/shankul_patel_resume.pdf">Resume</a></p>
             </div>
         </div>
 
-     
-       
-        <div id="about_content">
-            
-            <!-- <div id="about_me">
-    
-                <div id="intro">
-                    <img id="profile-image" src="../src/myPhoto.jpg" alt="Profile Image of Shankul Patel" class="profile-image"> <br>
-                    <p>Greetings! Thanks for visiting my personal website. My name is Shankul Patel, from <b>Uttar Pradesh</b>, currently pursuing <b>Master of Technoloy (MTech) in Data Science</b>
-                        from <b>Jawaharlal Nehru University (JNU) New Delhi</b>. I'm more passionate to work in research field of Artificial Intelligence.
-                    Before my M Tech I did <b>Master of Computer Application (MCA)</b> from JNU New Delhi (Batch- 2021-23). My Interests are teaching, exploring new areas
-                from the perspective of computer science student. Thank you. Here is my resume attached. <a id="resume" href="../src/shankul_patel_resume.pdf" style="color: red;">Resume</a></p>
-                </div>
-            </div> -->
-
-            <h1>Skills</h1>
-            <div id="skills">
-                <div id="grp1">
+        <!-- Skills Section -->
+        <div class="skills-section">
+            <h3>Skills</h3>
+            <div class="skills-container">
+                <!-- Technical Skills -->
+                <div class="skills-category">
+                    <h4>Artificial Intelligence</h4>
                     <ul>
+                        <li>AI&ML</li>
                         <li>Deep Learning</li>
-                        <li>Computer Vision</li>
                         <li>Natural Language Processing</li>
-                        <li>Machine Learning (ML)</li>
-                        <li>Artificial Intelligence</li>
-                        <li>Data Mining</li>
+                        <li>Computer Vision</li>
+                        <li>Data MIning</li>
                     </ul>
                 </div>
-                <div id="grp2">
+                <div class="skills-category">
+                    <h4>Computer Science</h4>
                     <ul>
                         <li>Theory of Computation</li>
                         <li>Data Structures</li>
-                        <li>Algorithms (Design and Analysis)</li>
+                        <li>Algorithms</li>
                         <li>Database Systems</li>
                         <li>Computer Networks</li>
-                        <li>Internet of Things (IoT)</li>
-                        <li></li> 
+                        <li>Network Security and Cryptography</li>
+                        <li>Internet of Things</li>
                     </ul>
                 </div>
-                <div id="grp3">
+                <div class="skills-category">
+                    <h4>Mathematics</h4>
                     <ul>
-                        <li>Information Theory</li>
                         <li>Linear Algebra</li>
                         <li>Probability and Statistics</li>
+                        <li>Information Theory</li>
                         <li>Optimization</li>
-                        <li>Multivariable Calculus</li> 
+                        <li>Calculus</li>
                     </ul>
                 </div>
-                <div id="grp4">
+                <div class="skills-category">
+                    <h4>Programming</h4>
                     <ul>
-                        <li>Python, C/C++</li>
-                        <li>PyTorch, Scikit-Learn</li>
+                        <li>Python, PyTorch</li>
+                        <li>C/C++</li>
                         <li>HuggingFace</li>
-                    </ul>
-                </div>
-                <div id="grp5">
-                    <ul>
                         <li>LaTeX</li>
                         <li>Git and GitHub</li>
                     </ul>
-                    
                 </div>
+
+                <!-- Soft Skills -->
+                <!-- <div class="skills-category">
+                    <h4>Soft Skills</h4>
+                    <ul>
+                        <li>Team Collaboration</li>
+                        <li>Problem Solving</li>
+                        <li>Communication</li>
+                        <li>Critical Thinking</li>
+                        <li>Time Management</li>
+                    </ul>
+                </div> -->
             </div>
+        </div>
 
-
-            <!--start here-->
-            <div id="qualification_table">
-            <h1 class="edu">Educational Qaulifications</h1><br>
-            <table>
-                <tr class="even">
-                    <th>Qualification</th>
-                    <th>Degree</th>
-                    <th>CGPA/Marks</th>
-                    <th>University/Board</th>
-                    <th>University/College Name</th>
-                    <th>Year</th>
-                </tr>
-                <tr class="odd">
-                    <th>Post Graduation</th>
-                    <td>Master of Technology (Data Science)</td>
-                    <td>CGPA: 8.4/9</td>
-                    <td colspan="2">Jawaharlal Nehru University (JNU) New Delhi</td>
-                    
-                    <td>2023-2025</td>
-                </tr>
-                <tr class="even">
-                    <th>Post Graduation</th>
-                    <td>Master of Computer Applications (MCA)</td>
-                    <td>CGPA: 7.13/9</td>
-                    <td colspan="2">Jawaharlal Nehru University (JNU) New Delhi</td>
-                    
-                    <td>2021-2023</td>
-                </tr>
-                <tr class="odd">
-                    <th>Graduation</th>
-                    <td>Bachelor of Computer Applications (BCA)</td>
-                    <td>66.13%</td>
-                    <td>CSJM University Kanpur</td>
-                    <td>PPN PG College Kanpur</td>
-                    <td>2017-2020</td>
-                </tr>
-                <tr class="even">
-                    <th>Intermediate</th>
-                    <td></td>
-                    <td>82.40%</td>
-                    <td>UP Board</td>
-                    <td> BN Inter College Mallawan Hardoi</td>
-                    <td>2015-2017</td>
-                </tr>
-                <tr class="odd">
-                    <th>High School</th>
-                    <td></td>
-                    <td>82.33%</td>
-                    <td>UP Board</td>
-                    <td>MPHSS Sendhrauli Madhoganj Hardoi</td>
-                    <td>2013-2015</td>
-                </tr>
-            </table>
-            <br>
-
-            </div>
-
-
-            <div id="qualification_table">
-            <h1 class="edu">Other Qualifications</h1><br>
-            <table>
-                <tr class="even">
-                    <th>Qualification</th>
-                    <th>Subject</th>
-                    <th>Month/Year</th>
-                    <th>Marks</th>
-                </tr>
-                <tr   class="odd">
-                    <th>IIT GATE</th>
-                    <td>Data Science and Artificial Intelligence</td>
-                    <td>Feb 2024</td>
-                    <td>_</td>
-                </tr>
-                <tr   class="even">
-                    <th>IIT GATE</th>
-                    <td>Computer Science and Information Technology</td>
-                    <td>Feb 2023</td>
-                    <td>_</td>
-                </tr>
-                <tr  class="odd">
-                    <th>UGC NET</th>
-                    <td>Computer Science and Applications</td>
-                    <td>Dec 2022</td>
-                    <td>_</td>
-                </tr>
-                <tr class="even">
-                    <th>UGC NET</th>
-                    <td>Computer Science and Information Technology</td>
-                    <td>Jun 2023</td>
-                    <td>_</td>
-                </tr>
-            </table><br>
-            </div>
-            <!--Certificates and others-->
-
-            <div id="certificates">
-                <h1 class="edu">Certificates/ Achievements</h1><br>
-                <table>
-                    <tr class="even">
-                        <th>Courses</th>
-                        <th>From</th>
-                        <th>Month/Year</th>
+        <!-- Educational Qualifications Section -->
+        <div class="education-section">
+            <h3>Educational Qualifications</h3>
+            <table class="education-table">
+                <thead>
+                    <tr>
+                        <th>Qualification</th>
+                        <th>Degree</th>
                         <th>Marks</th>
-                        <th>Course Instructor</th>
-                        <th>Certificate</th>
+                        <th>University/Board</th>
+                        <th>Year</th>
                     </tr>
-                    <tr   class="odd">
-                        <th>Deep Learning for Computer Vision (DL4CV)</th>
-                        <td>IIT Hyderabad (NPTEL)</td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Master of Technology (MTech)</td>
+                        <td>Data Science</td>
+                        <td>GPA: 8.4/9</td>
+                        <td>Jawaharlal Nehru University New Delhi</td>
+                        <td>2023-2025</td>
+                    </tr>
+                    <tr>
+                        <td>Master of Computer Applications (MCA)</td>
+                        <td>Computer Science</td>
+                        <td>CGPA: 7.13/9</td>
+                        <td>Jawaharlal Nehru University New Delhi</td>
+                        <td>2021-2023</td>
+                    </tr>
+                    <tr>
+                        <td>Bachelor of Computer Applications (BCA)</td>
+                        <td>Computer Science</td>
+                        <td>66.13%</td>
+                        <td>CSJM UNiversity Kanpur (PPN PG College)</td>
+                        <td>2017-2020</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Intermediate</td>
+                        <!-- <td>Computer Science</td> -->
+                        <td>82.4%</td>
+                        <td>UP Board (BN Inter College)</td>
+                        <td>2015-2017</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">High School</td>
+                        <!-- <td>Computer Science</td> -->
+                        <td>82.3%</td>
+                        <td>UP Board</td>
+                        <td>2013-2015</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Other Qualifications Section -->
+        <div class="other-qualifications">
+            <h3>Other Qualifications</h3>
+            <ul>
+                <li>IIT GATE (Data Science and Artificial Intelligence), 2024</li>
+                <li>IIT GATE (Computer Science and Information Technology), 2023</li>
+                <li>UGC NET (Computer Science and Applications), 2022, 2023, 2024</li>
+                <!-- <li>Workshop on Cloud Computing - JKL University</li> -->
+            </ul>
+        </div>
+
+
+
+        <!-- Certificates Section -->
+        <div class="certificates-section">
+            <h3>Certificates</h3>
+            <table class="certificates-table">
+                <thead>
+                    <tr>
+                        <th>Course Name</th>
+                        <th>From</th>
+                        <th>Instructor</th>
+                        <th>Year</th>
+                        <th>Marks/Grade</th>
+                        <th>Download</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Deep Learning for Computer Vision</td>
+                        <td>NPTEL (IIT-H)</td>
+                        <td>Vineeth N Balasubramanian</td>
                         <td>Nov 2024</td>
                         <td>67%</td>
+                        <td><a href="../src/DL_4_CV.pdf" target="_blank">Download</a></td>
+                    </tr>
+                    <!-- <tr>
+                        <td>Machine Learning Specialist</td>
+                        <td>DEF Organization</td>
                         <td>Vineeth N Balasubramanian</td>
-                        <td><a id="resume" href="../src/DL_4_CV.pdf" style="color: blue;">Download</a></td>
+                        <td>2023</td>
+                        <td>A+</td>
+                        <td><a href="../src/certificate2.pdf" target="_blank">Download</a></td>
                     </tr>
-
-
-                    <!--
-                        <tr   class="even">
-                        <th>IIT GATE</th>
-                        <td>Computer Science and Information Technology</td>
-                        <td>Feb 2023</td>
-                        <td>_</td>
+                    <tr>
+                        <td>Software Development</td>
+                        <td>GHI Academy</td>
+                        <td>Vineeth N Balasubramanian</td>
+                        <td>2022</td>
+                        <td>90%</td>
+                        <td><a href="../src/certificate3.pdf" target="_blank">Download</a></td>
                     </tr>
-                    <tr  class="odd">
-                        <th>UGC NET</th>
-                        <td>Computer Science and Applications</td>
-                        <td>Dec 2022</td>
-                        <td>_</td>
-                    </tr>
-                    <tr class="even">
-                        <th>UGC NET</th>
-                        <td>Computer Science and Information Technology</td>
-                        <td>Jun 2023</td>
-                        <td>_</td>
-                    </tr>
-                    -->
-                </table><br>
-                </div>
+                    <tr>
+                        <td>Cloud Computing Workshop</td>
+                        <td>JKL University</td>
+                        <td>Vineeth N Balasubramanian</td>
+                        <td>2021</td>
+                        <td>Completed</td>
+                        <td><a href="../src/certificate4.pdf" target="_blank">Download</a></td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
 
 
-            <!--end Certificates-->
-
-            <!--Publications-->
-
-            <div id="certificates">
-                <h1 class="edu">Publications</h1><br>
-                <table>
-                    <tr class="even">
+        <!-- Research Publications Section -->
+        <div class="research-publications">
+            <h3>Research Publications</h3>
+            <table class="research-table">
+                <thead>
+                    <tr>
                         <th>Year</th>
                         <th>Area</th>
                         <th>Title</th>
-                        <th>Author(s)</th>
-                        <th>Affiliation(s)</th>
-                        <th>Link</th>
+                        <th>Authors</th>
+                        <th>Affiliations</th>
+                        <th>Download</th>
                     </tr>
-                    <tr   class="odd">
-                        <th>2024</th>
-                        <td>Internet of Things</td>
-                        <td> title...</td>
-                        <td>authors...</td>
-                        <td>JNU New Delhi</td>
-                        <td><a id="" href="" style="color: blue;">Download</a></td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024</td>
+                        <td>Embedded Systems</td>
+                        <td>Title</td>
+                        <td>Shankul Patel</td>
+                        <td>Jawaharlal Nehru University</td>
+                        <td><a href="#" target="_blank">Download</a></td>
                     </tr>
-
-                </table><br>
-            </div>
-
-
-        <!--end Publications-->
-
-            <div id="contact_details">
-                <h1 class="edu">Contact/Correspondence Deatails</h1><br>
-                <p>Shankul Patel <br>
-                    Multimodal Intelligence (Lab 203) <br>
-                    School of Computer and Systems Sciences (SC&SS) <br>
-                    Jawaharlal Nehru University (JNU) <br>
-                    New Delhi 110067 <br>
-                    Mobile: 9569770695 <br>
-                    <a id="email" href="mailto:shanku62_scs@jnu.ac.in">Email: shanku62_scs@jnu.ac.in</a> <br>
-                    <a id="email" href="mailto:spatel280400@gmail.com">Email: spatel280400@gmail.com (P)</a> <br>
-                    <a id="linkedin" href="http://www.linkedin.com/in/sp2804">Linkedin: https://www.linkedin.com/in/sp2804</a> <br>
-                </p>
-                <br>
-                </div>
-            <!--end here-->
+                    <!-- <tr>
+                        <td>2023</td>
+                        <td>Data Science</td>
+                        <td>Big Data Analytics Using Python</td>
+                        <td>Shankul Patel, B. Sharma</td>
+                        <td>JNU, XYZ University</td>
+                        <td><a href="../src/research2.pdf" target="_blank">Download</a></td>
+                    </tr> -->
+                </tbody>
+            </table>
         </div>
-        <br>
-        <div id="footer">
-            <div id="sec1">
-                <h5>Website copyright.<br>
-                Developed and maintained by Shankul Patel.<br>
-                This website is under development.</h5>
-                
-            </div>
+
+
+        <!-- Correspondence Details Section -->
+        <div class="correspondence-details">
+            <h3>Correspondence Details</h3>
+            <p><strong>Name:</strong> Shankul Patel</p>
+            <p><strong>Lab:</strong> Multimodal Intelligence Research Lab (L203)</p>
+            <p><strong>School:</strong> School of Computational and Integrative Sciences</p>
+            <p><strong>University:</strong> Jawaharlal Nehru University, New Delhi</p>
+            <p><strong>Mobile:</strong> (+91) 9569770695</p>
+            <p><strong>Email:</strong> <a href="mailto:shanku62_scs@gmail.com">shanku62_scs@gmail.com</a></p>
+            <p><strong>Email:</strong> <a href="mailto:spatel280400@gmail.com">spatel280400@gmail.com (P)</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/spatel2804" target="_blank">linkedin.com/in/spatel2804</a></p>
         </div>
-        
-        
-        
+
+
+
+
+
+</div>
+
     
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-content">
+            <p>Website copyright © 2025. Developed and maintained by <strong>Shankul Patel</strong>.</p>
+            <p>This website is under development.</p>
+        </div>
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/in/shankulpatel" target="_blank">LinkedIn</a> | 
+            <a href="mailto:shankul.patel@example.com">Email</a>
+        </div>
+    </footer>
 
 </body>
 </html>

@@ -3,67 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>reseach</title>
-    <link href="../css/style.css"  type="text/css" rel="stylesheet">
-    <!-- Add MathJax -->
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>Research</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        h1, h3, h4 {
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        #navbar {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 12px 0;
+            margin: 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+        #navbar li {
+            margin: 0 25px;
+        }
+        #navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px; /* Increased font size */
+            font-weight: 500;
+            padding: 8px 16px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+        #navbar a:hover {
+            background-color: #007bff;
+            border-radius: 4px;
+        }
+
+        /* Page Content */
+        #content {
+            padding: 30px 5%;
+        }
+        .project {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .project .title h1 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .project_info {
+            margin-top: 15px;
+        }
+        .project_info h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .project_info p {
+            font-size: 16px;
+            line-height: 1.7;
+        }
+        .project_info h4 {
+            font-size: 16px;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        #footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 5%;
+            font-size: 14px;
+            margin-top: 10px;
+            border-top: 1px solid #007bff;
+            line-height: 1;
+        }
+
+        .footer-content p {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .footer-links a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #0056b3;
+        }
+
+        .footer-links {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+    </style>
 </head>
 <body>
-  <div id="information">
-    <div id="info">
-        <h1>Research</h1>
-    </div>
-  </div>
-        <ul id="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <!--<li><a href="#"></a></li>-->
-            <li><a href="#">Research</a></li>
-            <li><a href="blogs.html">Blogs</a></li>
-            
-        </ul>
-       
-        
-        <!-- <div id="research_content"> <br><br>
-            
-                <h2 id="correspondence">Research</h2> 
-            
-            
 
-        </div> -->
+    <!-- Navbar -->
+    <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="literature.html">Literature</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+    </ul>
 
-
-        <br>
-
-        <!--Blog 1-->
-        <div id="blog">
-            <div id="title">
-                <h1 id="blog_title">Attention Is All You Need: Transformer</h1>
-            </div>
-            
-            <div id="blog_info">
-                <p>This is program verification technique which has a loop.</p><br>
-                <b>Topic: </b><i>Deep Learning</i><br>
-                <b>Keywords: </b><i>Deep Learning, Large Language Model</i><br>
-                <b>Written by: </b><i>Shankul Patel</i><br>
-                <b>Dated: </b>Dec 7, 2024<br>
-            </div>
-            <br>
-            </div>
-        
-        <div id="footer">
-            <div id="sec1">
-                <h5>Website copyright.<br>
-                Developed and maintained by Shankul Patel.<br>
-                This website is under development.</h5>
-                
-            </div>
-        </div>
-        
-        
-        
+    <!-- Main Content -->
     
+    <!-- Footer -->
+<footer id="footer">
+    <div class="footer-content">
+        <p>Website copyright © 2025. Developed and maintained by <strong>Shankul Patel</strong>.</p>
+        <p>This website is under development.</p>
+    </div>
+    <div class="footer-links">
+        <a href="https://www.linkedin.com/in/shankulpatel" target="_blank">LinkedIn</a> | 
+        <a href="mailto:shankul.patel@example.com">Email</a>
+    </div>
+</footer>
+
 
 </body>
 </html>
