@@ -97,9 +97,10 @@
 
         .photos h3, .announcements h3 {
             font-size: 20px;
-            font-weight: 600;
+            font-weight: 800;
             margin-bottom: 15px;
-            color: #333;
+            color: #007bff;
+
         }
 
         .photo-grid {
@@ -110,7 +111,7 @@
 
         .photo-grid img {
             width: 100%;
-            height: auto;
+            height: auto; 
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
@@ -124,7 +125,55 @@
             margin-bottom: 10px;
             font-size: 16px;
             line-height: 1.5;
+            color: #007bff;
+            font-weight: 800;
+        }
+        .announcements strong {
+            color: teal;
+            font-weight: 500;
+        }
+        .announcements em {
+            color: teal;
+            font-weight: 500;
+        }
+
+        /* Activities and Participation Section */
+        #activities-participation {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .activity-part {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 1;
+        }
+
+        .activity-part h3 {
+            font-size: 20px;
+            font-weight: 800;
+            margin-bottom: 15px;
+            color: #007bff;
+        }
+
+        .activity-part p {
+            font-size: 16px;
+            line-height: 1.5;
             color: #333;
+            margin-bottom: 20px;
+        }
+
+        .photo-grid img {
+            width: 100%;
+            height: auto; 
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+            /* margin-top: 20px; */
         }
 
 
@@ -162,6 +211,9 @@
         }
 
     </style>
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 </head>
 <body>
 
@@ -171,7 +223,7 @@
         <li><a href="about.html">About</a></li>
         <li><a href="literature.html">Literature</a></li>
         <li><a href="research.html">Research</a></li>
-        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="blogs.html">Blogs & Reviews</a></li>
     </ul>
 
     <!-- Main Content -->
@@ -189,15 +241,15 @@
                     <h3>Gallery</h3>
                     <div class="photo-grid">
                         <img src="../src/myPhoto.jpg" alt="Photo 1">
-                        <img src="../src/myPhoto.jpg" alt="Photo 2">
-                        <img src="../src/myPhoto.jpg" alt="Photo 3">
-                        <img src="../src/myPhoto.jpg" alt="Photo 4">
-                        <!-- <img src="../src/myPhoto.jpg" alt="Photo 4">
-                        <img src="../src/myPhoto.jpg" alt="Photo 4">
-                        <img src="../src/myPhoto.jpg" alt="Photo 2">
-                        <img src="../src/myPhoto.jpg" alt="Photo 3">
-                        <img src="../src/myPhoto.jpg" alt="Photo 4">
-                        <img src="../src/myPhoto.jpg" alt="Photo 4"> -->
+                        <img src="../src/admin.jpg" alt="Photo 2">
+                        <img src="../src/jnu_convention.jpeg" alt="Photo 3">
+                        <img src="../src/jnu_night.jpg" alt="Photo 4">
+                        <img src="../src/scss.jpg" alt="Photo 4">
+                        <img src="../src/vivekanand.jpg" alt="Photo 4">
+                        <!-- <img src="../src/.jpg" alt="Photo 2"> -->
+                        <img src="../src/scooter.jpg" alt="Photo 3">
+                        <img src="../src/admin2.jpg" alt="Photo 4">
+                        <img src="../src/jawaharlal.jpg" alt="Photo 4">
                         
                     </div>
                 </div>
@@ -206,13 +258,94 @@
                 <div class="announcements">
                     <h3>Announcements!!</h3>
                     <ul>
-                        <li>New Literature Review: "Transformers in NLP" - January 10, 2025</li>
-                        <li>New Blog Post: "Understanding Self-Attention Mechanisms" - January 5, 2025</li>
-                        <li>Upcoming Research Paper: "Optimizing Neural Networks" - Coming Soon</li>
+                        <li><strong>Literature Review:</strong>  Attention is All You Need <em>(January 10, 2025)</em> 
+                            <a href="literature.html#AttentionIsAllYouNeed"
+                            target="_blank" download>
+                            <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </li>
+                        <li><strong>Blog:</strong> AI: Impact on Society <em>(January 10, 2025)</em> 
+                            <a href="blogs.html#HistoryOfAI"
+                            target="_blank" download>
+                            <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </li>
+                        
                     </ul>
                 </div>
             </div>
-        </div>
+
+
+            <!-- Activities and Participation Section -->
+            <div id="activities-participation">
+                <div class="activity-part">
+                    <h3>Vishwavidyalaya Anusandhan Utsav @Dr Ambedkar International Center New Delhi (Apr 24, 2023)</h3>
+                    <p>Participated in the Utsav 2023 by DST (Department of Science and Technology)
+                        at Dr. Ambedkar International Center New Delhi. Represented the 
+                        School of Computer and Systems Sciences (SC&SS) JNU New Delhi by presenting
+                        the poster at the  JNU stall from the Microsystems Lab under the supervision of 
+                        Dr. Poonam Agarwal (currently Associate Professor at the SC&SS, JNU).
+                        Hon'ble Minister <strong>Dr. Jitendra Singh</strong> launched the <strong>SUPREME</strong>
+                        program.
+                </p>
+                    <div class="photo-grid">
+                        <img src="../src/dst1.jpg" alt="Event 1">
+                        <img src="../src/dst2.jpg" alt="Event 2">
+                        <img src="../src/dst3.jpg" alt="Event 3">
+                        <img src="../src/dst4.jpg" alt="Event 1">
+                        <img src="../src/dst5.jpg" alt="Event 2">
+                        <!-- <img src="../src/event3.jpg" alt="Event 3"> -->
+                    </div>
+                </div>
+
+                <div class="activity-part">
+                    <h3>RIISE 2023 Program @IIIT Delhi (May 11, 2023)</h3>
+                    <p><strong>Prof. Manindra Agrawal (IITK)</strong> was the keynote speaker highlighting the 
+                    effectiveness and relevance of 'Research from First Principles' in the era of Artificial Intelligence and 
+                    Deep Learning. He shared the thoughts on how he predicted the waves of CORONA epidemic just 
+                    by using simple differential equations. It was a very refressing session to hear from him.
+                    In the Industry 4.0 session, speakers articulated how AI is being used in 4.0. There were many poster presentations
+                    on many topics including AI, Communications etc./p>
+                    <div class="photo-grid">
+                        <img src="../src/iiitd.jpg" alt="IIIT Delhi">
+                        <img src="../src/riise1.jpg" alt="">
+                        <img src="../src/riise2.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <!-- Uncomment the following code to add the events -->
+            <!-- <div id="activities-participation">
+                <div class="activity-part">
+                    <h3>Event: Tech Conference 2024</h3>
+                    <p>Experience: Participated in the Tech Conference 2024 where innovative discussions, workshops, and networking took place.</p>
+                    <div class="photo-grid">
+                        <img src="../src/event1.jpg" alt="Event 1">
+                        <img src="../src/event2.jpg" alt="Event 2">
+                        <img src="../src/event3.jpg" alt="Event 3">
+                    </div>
+                </div>
+
+                <div class="activity-part">
+                    <h3>Event: AI Workshop 2023</h3>
+                    <p>Experience: Engaged in hands-on sessions and discussions on the latest advancements in AI at the AI Workshop 2023.</p>
+                    <div class="photo-grid">
+                        <img src="../src/workshop1.jpg" alt="Workshop 1">
+                        <img src="../src/workshop2.jpg" alt="Workshop 2">
+                        <img src="../src/workshop3.jpg" alt="Workshop 3">
+                    </div>
+                </div>
+            </div> -->
+            <!-- Uncomment the following code to add the events -->
+
+
+           
+
+
+</div>
     
     <!-- Footer -->
 <footer id="footer">
