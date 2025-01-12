@@ -77,11 +77,8 @@
             border-radius: 8px;
         }
         .profile-left img {
-            width: 180px;
-            height: 180px;
-            border-radius: 5%;
-            margin-bottom: 10px;
-            margin-top: 20px;
+            width: 100%;
+            height: auto
         }
         .profile-left h1 {
             font-size: 24px;
@@ -98,6 +95,31 @@
         .profile-right p {
             font-size: 16px;
             line-height: 1.7;
+        }
+        .profile-right strong {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #007bff;
+        }
+        .download-btn {
+        display: inline-block;
+        padding: 3px 8px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        }
+
+        .download-btn:hover {
+        background-color: #0056b3;
+        }
+
+        .download-btn:active {
+        background-color: #003f7f;
         }
 
         /* Skills Section */
@@ -313,6 +335,46 @@
         .correspondence-details a:hover {
             color: #0056b3;
         }
+        .whatsapp-icon {
+        font-size: 16px;
+        color: #25d366; /* WhatsApp green */
+        text-decoration: none;
+        transition: transform 0.2s ease;
+        }
+
+        .whatsapp-icon:hover {
+        color: #25d366;
+        }
+        .email-icon {
+        font-size: 16px;
+        color: #333; /* Default color */
+        text-decoration: none;
+        transition: color 0.3s ease;
+        }
+
+        .email-icon:hover {
+        color: #007bff; /* Hover color */
+        }
+        .linkedin-icon {
+        font-size: 16px;
+        color: #0a66c2; /* LinkedIn blue */
+        text-decoration: none;
+        transition: color 0.3s ease;
+        }
+
+        .linkedin-icon:hover {
+        color: #004182; /* Darker blue on hover */
+        }
+        .github-icon {
+        font-size: 16px;
+        color: #333; /* GitHub logo color */
+        text-decoration: none;
+        transition: color 0.3s ease;
+        }
+
+        .github-icon:hover {
+        color: #4078c0; /* Hover effect */
+        }
 
         /* Footer */
         #footer {
@@ -323,7 +385,7 @@
             font-size: 14px;
             margin-top: 10px;
             border-top: 1px solid #007bff;
-            line-height: 1;
+            line-height: .6;
         }
 
         .footer-content p {
@@ -347,6 +409,9 @@
             font-size: 16px;
         }
     </style>
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 </head>
 <body>
 
@@ -372,9 +437,29 @@
             <!-- Bio Right -->
             <div class="profile-right">
                 <h3>Bio</h3>
-                <p>Greetings! Thanks for visiting my personal website. My name is Shankul Patel, from <b>Uttar Pradesh</b>, currently pursuing <b>Master of Technology (MTech) in Data Science</b>
-                from <b>Jawaharlal Nehru University (JNU) New Delhi</b>. I'm passionate about working in the research field of Artificial Intelligence.</p>
-                <p>Before my MTech, I did <b>Master of Computer Application (MCA)</b> from JNU New Delhi (Batch 2021-23). My interests include teaching and exploring new areas from the perspective of a computer science student. Thank you for visiting! Here is my resume attached: <a href="../src/shankul_patel_resume.pdf">Resume</a></p>
+                <p>Greetings! I’m Shankul Patel, an aspiring <strong>AI researcher</strong>, currently pursuing
+                     <strong>Master of Technology in Data Science</strong> (Batch 2023–2025) 
+                    at <strong>Jawaharlal Nehru University (JNU)</strong>, New Delhi. I hold a Master of 
+                    <strong>Computer Application (MCA)</strong> from JNU (Batch 2021–2023), where I built 
+                    a solid foundation in computer science and computational thinking.</p>
+                <p>
+                    My research interests include <strong id="researchInterests">Deep Learning, Multimodal Learning, 
+                        Natural Language Processing (NLP), Computer Vision, and Embedded Systems</strong>, with a 
+                    particular focus on their applications in real-world challenges. 
+                    I am passionate about exploring the intersection of these domains and 
+                    leveraging cutting-edge techniques to solve complex problems.
+                </p>
+                <p>
+                    Beyond research, I have a keen interest in <strong>teaching</strong> and <strong>sharing 
+                        knowledge</strong>. I frequently write blogs and literature reviews on AI's
+                     societal impact, fostering discussions about the transformative role 
+                     of technology. My goal is to contribute meaningfully to the AI 
+                     research community while inspiring others to embark on similar 
+                     journeys.
+                </p>
+                <p>Thank you for visiting my personal website! Feel free to explore 
+                    my work and connect for potential collaborations. Here is my resume:
+                <a href="../src/shankul_patel_resume.pdf" download="My_Resume.pdf" class="download-btn">Download</a></p>
             </div>
         </div>
 
@@ -457,14 +542,14 @@
                     <tr>
                         <td>Master of Technology (MTech)</td>
                         <td>Data Science</td>
-                        <td>GPA: 8.4/9</td>
+                        <td>8.4/9</td>
                         <td>Jawaharlal Nehru University New Delhi</td>
                         <td>2023-2025</td>
                     </tr>
                     <tr>
                         <td>Master of Computer Applications (MCA)</td>
                         <td>Computer Science</td>
-                        <td>CGPA: 7.13/9</td>
+                        <td>7.13/9</td>
                         <td>Jawaharlal Nehru University New Delhi</td>
                         <td>2021-2023</td>
                     </tr>
@@ -476,8 +561,8 @@
                         <td>2017-2020</td>
                     </tr>
                     <tr>
-                        <td colspan="2">Intermediate</td>
-                        <!-- <td>Computer Science</td> -->
+                        <td>Intermediate</td>
+                        <td>Phy, Chem, Maths</td>
                         <td>82.4%</td>
                         <td>UP Board (BN Inter College)</td>
                         <td>2015-2017</td>
@@ -497,9 +582,9 @@
         <div class="other-qualifications">
             <h3>Other Qualifications</h3>
             <ul>
-                <li>IIT GATE (Data Science and Artificial Intelligence), 2024</li>
-                <li>IIT GATE (Computer Science and Information Technology), 2023</li>
-                <li>UGC NET (Computer Science and Applications), 2022, 2023, 2024</li>
+                <li><strong>IIT GATE</strong> (Data Science and Artificial Intelligence), 2024</li>
+                <li><strong>IIT GATE</strong> (Computer Science and Information Technology), 2023</li>
+                <li><strong>UGC NET</strong> (Computer Science and Applications), 2022, 2023, 2024</li>
                 <!-- <li>Workshop on Cloud Computing - JKL University</li> -->
             </ul>
         </div>
@@ -601,13 +686,28 @@
             <p><strong>Lab:</strong> Multimodal Intelligence Research Lab (L203)</p>
             <p><strong>School:</strong> School of Computational and Integrative Sciences</p>
             <p><strong>University:</strong> Jawaharlal Nehru University, New Delhi</p>
-            <p><strong>Mobile:</strong> (+91) 9569770695</p>
-            <p><strong>Email:</strong> <a href="mailto:shanku62_scs@gmail.com">shanku62_scs@gmail.com</a></p>
-            <p><strong>Email:</strong> <a href="mailto:spatel280400@gmail.com">spatel280400@gmail.com (P)</a></p>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/spatel2804" target="_blank">linkedin.com/in/spatel2804</a></p>
+
+            <p><strong>Mobile:</strong> (+91) 9569770695 <a href="https://wa.me/9569770695" target="_blank" class="whatsapp-icon">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a> </p>
+
+            <p><strong>Email:</strong> <a href="mailto:shanku62_scs@gmail.com" class="email-icon">shanku62_scs@gmail.com
+                <i class="fa-solid fa-envelope"></i>
+            </a></p>
+
+            <p><strong>Email:</strong> <a href="mailto:spatel280400@gmail.com" class="email-icon">spatel280400@gmail.com (P)
+                <i class="fa-solid fa-envelope"></i> 
+            </a></p>
+            
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/spatel2804" target="_blank" class="linkedin-icon">www.linkedin.com/in/spatel2804
+                <i class="fa-brands fa-linkedin"></i>
+            </a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/ShankulPatel" target="_blank" class="github-icon"> https://github.com/ShankulPatel
+                <i class="fa-brands fa-github"></i>
+              </a> </p>
         </div>
 
-
+        
 
 
 
@@ -622,8 +722,18 @@
             <p>This website is under development.</p>
         </div>
         <div class="footer-links">
-            <a href="https://www.linkedin.com/in/shankulpatel" target="_blank">LinkedIn</a> | 
-            <a href="mailto:shankul.patel@example.com">Email</a>
+            <a href="https://www.linkedin.com/in/spatel2804" target="_blank" class="linkedin-icon">
+                <i class="fa-brands fa-linkedin"></i>
+            </a> | 
+
+            <a href="mailto:shanku62_scs@gmail.com" class="email-icon">
+                <i class="fa-solid fa-envelope"></i>
+            </a> |
+
+            <a href="https://wa.me/9569770695" target="_blank" class="whatsapp-icon">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
         </div>
     </footer>
 

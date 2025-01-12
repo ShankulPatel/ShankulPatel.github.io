@@ -103,7 +103,46 @@
             line-height: 1.8;
             color: #333;
         }
+        .whatsapp-icon {
+        font-size: 16px;
+        color: #25d366; /* WhatsApp green */
+        text-decoration: none;
+        transition: transform 0.2s ease;
+        }
 
+        .whatsapp-icon:hover {
+        color: #25d366;
+        }
+        .email-icon {
+        font-size: 16px;
+        color: #333; /* Default color */
+        text-decoration: none;
+        transition: color 0.3s ease;
+        }
+
+        .email-icon:hover {
+        color: #007bff; /* Hover color */
+        }
+        .linkedin-icon {
+        font-size: 16px;
+        color: #0a66c2; /* LinkedIn blue */
+        text-decoration: none;
+        transition: color 0.3s ease;
+        }
+
+        .linkedin-icon:hover {
+        color: #004182; /* Darker blue on hover */
+        }
+        .github-icon {
+        font-size: 16px;
+        color: #333; /* GitHub logo color */
+        text-decoration: none;
+        transition: color 0.3s ease;
+        }
+
+        .github-icon:hover {
+        color: #4078c0; /* Hover effect */
+        }
 
         /* Footer */
         #footer {
@@ -114,7 +153,7 @@
             font-size: 14px;
             margin-top: 10px;
             border-top: 1px solid #007bff;
-            line-height: 1;
+            line-height: .6;
         }
 
         .footer-content p {
@@ -227,8 +266,17 @@
         <p>This website is under development.</p>
     </div>
     <div class="footer-links">
-        <a href="https://www.linkedin.com/in/shankulpatel" target="_blank">LinkedIn</a> | 
-        <a href="mailto:shankul.patel@example.com">Email</a>
+        <a href="https://www.linkedin.com/in/spatel2804" target="_blank" class="linkedin-icon">
+            <i class="fa-brands fa-linkedin"></i>
+        </a> | 
+
+        <a href="mailto:shanku62_scs@gmail.com" class="email-icon">
+            <i class="fa-solid fa-envelope"></i>
+        </a> |
+
+        <a href="https://wa.me/9569770695" target="_blank" class="whatsapp-icon">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
     </div>
 </footer>
 

@@ -87,7 +87,7 @@
             margin-top: 30px;
         }
 
-        .photos, .announcements {
+        .photos, .announcements, .announcement-container {
             background-color: #fff;
             padding: 20px;
             border-radius: 8px;
@@ -100,6 +100,7 @@
             font-weight: 800;
             margin-bottom: 15px;
             color: #007bff;
+            text-align: center;
 
         }
 
@@ -136,6 +137,66 @@
             color: teal;
             font-weight: 500;
         }
+        
+        /* announcemt scrollbar */
+        .announcement-container {
+        width: 400px;
+        height: auto;
+        margin: 0 auto;
+        padding: 10px;
+        /* border: 2px solid #007bff; */
+        border-radius: 8px;
+        background-color: #ffffff;
+        overflow-y: auto;
+        scrollbar-width: thin; /* For Firefox */
+        scrollbar-color: #007bff #f4f4f9; /* For Firefox */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .announcement-container::-webkit-scrollbar {
+        width: 8px; /* For Chrome, Safari, and Edge */
+        }
+
+        .announcement-container::-webkit-scrollbar-track {
+        background: #f4f4f9; /* Track color */
+        border-radius: 8px;
+        }
+
+        .announcement-container::-webkit-scrollbar-thumb {
+        background-color: #007bff; 
+        border-radius: 8px;
+        border: 2px solid #f4f4f9; 
+        }
+
+        .announcement-title {
+        font-size: 20px;
+        font-weight: 800;
+        margin-bottom: 10px;
+        text-align: center;
+        color: #007bff;
+        }
+
+        .announcement {
+        font-size: 16px;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+        color: #007bff;
+        height: auto;
+        /* background-color: aquamarine; */
+        }
+        .announcement strong{
+        color: teal;
+        font-weight: 800;
+        }
+        
+
+        .announcement:last-child {
+        border-bottom: none;
+        }
+
+
+
 
         /* Activities and Participation Section */
         #activities-participation {
@@ -175,7 +236,47 @@
             margin-bottom: 10px;
             /* margin-top: 20px; */
         }
+        .whatsapp-icon {
+        font-size: 16px;
+        color: #25d366; /* WhatsApp green */
+        text-decoration: none;
+        transition: transform 0.2s ease;
+        }
 
+        .whatsapp-icon:hover {
+        color: #25d366;
+        }
+        .email-icon {
+        font-size: 16px;
+        color: #333; /* Default color */
+        text-decoration: none;
+        transition: color 0.3s ease;
+        }
+
+        .email-icon:hover {
+        color: #007bff; /* Hover color */
+        }
+        .linkedin-icon {
+        font-size: 16px;
+        color: #0a66c2; /* LinkedIn blue */
+        text-decoration: none;
+        transition: color 0.3s ease;
+        }
+
+        .linkedin-icon:hover {
+        color: #004182; /* Darker blue on hover */
+        }
+        .github-icon {
+        font-size: 16px;
+        color: #333; /* GitHub logo color */
+        text-decoration: none;
+        transition: color 0.3s ease;
+        }
+
+        .github-icon:hover {
+        color: #4078c0; /* Hover effect */
+        }
+        
 
         /* Footer */
         #footer {
@@ -186,7 +287,7 @@
             font-size: 14px;
             margin-top: 10px;
             border-top: 1px solid #007bff;
-            line-height: 1;
+            line-height: .6;
         }
 
         .footer-content p {
@@ -255,8 +356,8 @@
                 </div>
     
                 <!-- Announcements Section -->
-                <div class="announcements">
-                    <h3>Announcements!!</h3>
+                <div class="announcements ">
+                    <h3>Announcements</h3>
                     <ul>
                         <li><strong>Literature Review:</strong>  Attention is All You Need <em>(January 10, 2025)</em> 
                             <a href="literature.html#AttentionIsAllYouNeed"
@@ -273,14 +374,35 @@
                         
                     </ul>
                 </div>
+
+                <div class="announcement-container">
+                    <div class="announcement-title">Announcements</div>
+                    
+                    <div class="announcement">
+                        <strong>Blog:</strong> AI: Impact on Society <em>(January 10, 2025)</em> 
+                        <a href="blogs.html#HistoryOfAI"
+                        target="_blank" download>
+                        <i class="fas fa-arrow-right"></i>
+                        </a> 
+                    </div>
+                    <div class="announcement">
+                        <strong>Literature Review:</strong>  Attention is All You Need <em>(January 10, 2025)</em> 
+                            <a href="literature.html#AttentionIsAllYouNeed"
+                            target="_blank" download>
+                            <i class="fas fa-arrow-right"></i>
+                            </a>
+                    </div>
+                </div>
+
+
             </div>
 
 
             <!-- Activities and Participation Section -->
             <div id="activities-participation">
                 <div class="activity-part">
-                    <h3>Vishwavidyalaya Anusandhan Utsav @Dr Ambedkar International Center New Delhi (Apr 24, 2023)</h3>
-                    <p>Participated in the Utsav 2023 by DST (Department of Science and Technology)
+                    <h3>Vishwavidyalaya Anusandhan Utsav 2023 @Dr Ambedkar International Center New Delhi (Apr 24, 2023)</h3>
+                    <p>Participated in the Utsav 2023 by <strong>DST (Department of Science and Technology)</strong>
                         at Dr. Ambedkar International Center New Delhi. Represented the 
                         School of Computer and Systems Sciences (SC&SS) JNU New Delhi by presenting
                         the poster at the  JNU stall from the Microsystems Lab under the supervision of 
@@ -301,11 +423,11 @@
                 <div class="activity-part">
                     <h3>RIISE 2023 Program @IIIT Delhi (May 11, 2023)</h3>
                     <p><strong>Prof. Manindra Agrawal (IITK)</strong> was the keynote speaker highlighting the 
-                    effectiveness and relevance of 'Research from First Principles' in the era of Artificial Intelligence and 
+                    effectiveness and relevance of <strong>'Research from First Principles'</strong> in the era of Artificial Intelligence and 
                     Deep Learning. He shared the thoughts on how he predicted the waves of CORONA epidemic just 
                     by using simple differential equations. It was a very refressing session to hear from him.
-                    In the Industry 4.0 session, speakers articulated how AI is being used in 4.0. There were many poster presentations
-                    on many topics including AI, Communications etc./p>
+                    In the <strong>Industry 4.0</strong> session, speakers articulated how AI is being used in 4.0. There were many poster presentations
+                    on many topics including AI, Communications etc.</p>
                     <div class="photo-grid">
                         <img src="../src/iiitd.jpg" alt="IIIT Delhi">
                         <img src="../src/riise1.jpg" alt="">
@@ -341,7 +463,16 @@
             </div> -->
             <!-- Uncomment the following code to add the events -->
 
-
+            <!-- <div class="announcement-container">
+                <div class="announcement-title">Announcements</div>
+                <div class="announcement">📢 Event A is happening on January 20th, 2025!</div>
+                <div class="announcement">📢 Registration for Workshop B closes on February 15th, 2025.</div>
+                <div class="announcement">📢 The new semester starts on March 1st, 2025.</div>
+                <div class="announcement">📢 Remember to submit Project X by the end of this month!</div>
+                <div class="announcement">📢 Guest Lecture by Dr. Y on February 25th, 2025.</div>
+                <div class="announcement">📢 Mid-term exams are scheduled for April 10th-15th, 2025.</div>
+                <div class="announcement">📢 Don't miss the AI Hackathon on May 5th, 2025.</div>
+              </div> -->
            
 
 
@@ -354,8 +485,17 @@
         <p>This website is under development.</p>
     </div>
     <div class="footer-links">
-        <a href="https://www.linkedin.com/in/shankulpatel" target="_blank">LinkedIn</a> | 
-        <a href="mailto:shankul.patel@example.com">Email</a>
+        <a href="https://www.linkedin.com/in/spatel2804" target="_blank" class="linkedin-icon">
+            <i class="fa-brands fa-linkedin"></i>
+        </a> | 
+
+        <a href="mailto:shanku62_scs@gmail.com" class="email-icon">
+            <i class="fa-solid fa-envelope"></i>
+        </a> |
+
+        <a href="https://wa.me/9569770695" target="_blank" class="whatsapp-icon">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
     </div>
 </footer>
 
