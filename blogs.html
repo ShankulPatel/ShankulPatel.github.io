@@ -44,11 +44,42 @@
             display: inline-block;
             transition: background-color 0.3s;
         }
-        #navbar a:hover {
+        #navbar a:hover, .home-icon:hover,
+        .literature-icon:hover,
+        .research-icon:hover,
+        .blog-icon:hover,
+        .about-icon:hover {
             background-color: #007bff;
             border-radius: 4px;
+           
+        }
+        
+        .home-icon {
+            color: white; /* Blue color */
+            font-size: 24px; /* Size of the icon */
+            transition: color 0.3s, transform 0.3s;
+        }
+        .about-icon {
+            color: white; /* Blue color */
+            font-size: 24px; /* Icon size */
+            transition: color 0.3s, transform 0.3s;
+        }
+        .literature-icon {
+            color: white; /* Blue color */
+            font-size: 24px; /* Icon size */
+            transition: color 0.3s, transform 0.3s;
         }
 
+        .research-icon {
+            color: white; /* Blue color */
+            font-size: 24px; /* Icon size */
+            transition: color 0.3s, transform 0.3s;
+        }
+        .blog-icon {
+            color: white; /* Green color */
+            font-size: 24px; /* Icon size */
+            transition: color 0.3s, transform 0.3s;
+        }
         /* Page Content */
         #content {
             padding: 30px 5%;
@@ -73,6 +104,17 @@
             font-size: 16px;
             margin-bottom: 10px;
         }
+        .project_info ol {
+            font-size: 16px;
+            margin-bottom: 10px;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        .project_info i {
+            color: #007bff;
+            
+        }
+
         .project_info p {
             font-size: 16px;
             line-height: 1.7;
@@ -186,11 +228,11 @@
 
     <!-- Navbar -->
     <ul id="navbar">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="literature.html">Literature</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="blogs.html">Blogs & Reviews</a></li>
+        <li><a href="index.html"><i class="fas fa-home home-icon"></i> Home</a></li>
+        <li><a href="about.html"> <i class="fas fa-info-circle about-icon"></i> About</a></li>
+        <li><a href="literature.html"><i class="fas fa-book literature-icon"></i> Literature</a></li>
+        <li><a href="research.html"><i class="fas fa-search research-icon"></i> Research</a></li>
+        <li><a href="blogs.html"> <i class="fas fa-pencil-alt blog-icon"></i> Blogs & Reviews</a></li>
     </ul>
 
     <!-- Main Content -->
@@ -210,15 +252,34 @@
         <!-- Blog Code starts -->
         <div class="project">
             <div class="title">
-                <h1>History and Evolution of Artificial Intelligence</h1>
+                <h1>Creating the environment for Deep Learning, Natural Language Processing and LLMs</h1>
             </div>
             <div class="details">
                 <p><strong>Author:</strong> Shankul Patel</p>
-                <p><strong>Date:</strong> January 10, 2025</p>
+                <p><strong>Date:</strong> January 12, 2025</p>
             </div>
             <div class="project_info">
                 <h3>Blog</h3>
-                <p>The Transformer model has revolutionized the field of natural language processing (NLP) by introducing a mechanism called self-attention, enabling models to focus on relevant parts of the input sequence. This blog explores the intricacies of the Transformer architecture, its advantages over traditional RNN-based models, and its applications in various domains.</p>
+                <p>
+
+                    <ol>
+                        <li>Install Anaconda</li>
+                        <li>Install Visual Studio Code (VSCode) and Extensions like Python, Pylance, GitHub Copilot, Copilot Theme</li>
+                        <li>Open  VSCode, and Command Prompt Terminal in VSCode </li>
+                        <li>Run: <i>conda create -n mytorch python=3.10</i> (mytorch is the name of the created environment) </li>
+                        <li>Run: <i>conda activate pytorch</i></li>
+                        <li>Run: <i>conda install pytorch torchvision torchtext torchaudio cpuonly -c pytorch</i></li>
+                        <li>Run: <i>conda install -c conda-forge torchviz</i></li>
+                        <li>Run: <i>conda install seaborn</i></li>
+                        <li>Run: <i>conda install ipykernel</i></li>
+                        <li>Run: <i>conda install -c anaconda seaborn</i></li>
+                        <li>Run: <i>conda install scikit-learn</i></li>
+                        <li>Run: <i>conda install -c conda-forge detecto</i></li>
+                        <!-- <li>Run: <i></i></li> -->
+                    </ol>
+                
+                
+                </p>
             </div>
         </div>
         <!-- Blog Code ends -->

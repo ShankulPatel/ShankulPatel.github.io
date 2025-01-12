@@ -44,15 +44,68 @@
             display: inline-block;
             transition: background-color 0.3s;
         }
-        #navbar a:hover {
+        
+        #navbar a:hover, .home-icon:hover,
+        .literature-icon:hover,
+        .research-icon:hover,
+        .blog-icon:hover,
+        .about-icon:hover {
             background-color: #007bff;
             border-radius: 4px;
         }
+        
+
+        .home-icon {
+            color: white; /* Blue color */
+            font-size: 24px; /* Size of the icon */
+            transition: color 0.3s, transform 0.3s;
+        }
+        .about-icon {
+            color: white; /* Blue color */
+            font-size: 24px; /* Icon size */
+            transition: color 0.3s, transform 0.3s;
+        }
+        .literature-icon {
+            color: white; /* Blue color */
+            font-size: 24px; /* Icon size */
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .research-icon {
+            color: white; /* Blue color */
+            font-size: 24px; /* Icon size */
+            transition: color 0.3s, transform 0.3s;
+        }
+        .blog-icon {
+            color: white; /* Green color */
+            font-size: 24px; /* Icon size */
+            transition: color 0.3s, transform 0.3s;
+        }
+
 
         /* Page Content */
         #content {
             padding: 30px 5%;
         }
+
+        .bibtex-button {
+            display: inline-block;
+            padding: 2px 6px;
+            background: teal;
+            color: white;
+            font-size: 1rem;
+            font-weight: 200;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+        }
+        .bibtex-button:hover {
+            background: #c0392b;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
         .project {
             background-color: #fff;
             padding: 20px;
@@ -138,6 +191,14 @@
         color: #4078c0; /* Hover effect */
         }
 
+        .citation-icon {
+            font-size: 28px;
+            color: #3498db;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        
+        
         /* Footer */
         #footer {
             background-color: #333;
@@ -179,15 +240,22 @@
 
     <!-- Navbar -->
     <ul id="navbar">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="literature.html">Literature</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="blogs.html">Blogs & Reviews</a></li>
+        <li><a href="index.html"><i class="fas fa-home home-icon"></i> Home</a></li>
+        <li><a href="about.html"> <i class="fas fa-info-circle about-icon"></i> About</a></li>
+        <li><a href="literature.html"><i class="fas fa-book literature-icon"></i> Literature</a></li>
+        <li><a href="research.html"><i class="fas fa-search research-icon"></i> Research</a></li>
+        <li><a href="blogs.html"> <i class="fas fa-pencil-alt blog-icon"></i> Blogs & Reviews</a></li>
     </ul>
 
     <!-- Main Content -->
+
     <div id="content">
+
+         
+
+
+
+
         <div class="project">
             <div class="title">
                 <h1 id="AttentionIsAllYouNeed">Attention is All You Need</h1>
@@ -202,6 +270,7 @@
                 <p>This paper introduces the Transformer architecture, which relies entirely on self-attention mechanisms to process sequences. It eliminates the need for recurrence, making it highly parallelizable and efficient for tasks like machine translation.</p>
                 <h4>Keywords:</h4>
                 <p><i>Transformer, Self-Attention, Sequence-to-Sequence Learning, Neural Networks</i></p>
+                <h3><i class="fas fa-quote-left citation-icon"></i> Cite <a href="../src/bibtex/AttentionIsAllYouNeed.bib" class="bibtex-button" download="AttentionIsAllYouNeed.bib"><i>Bibtex</i></a></h3>
             </div>
         </div>
 
@@ -223,6 +292,10 @@
                 <p><i>Transformer, Self-Attention, Sequence-to-Sequence Learning, Neural Networks</i></p>
             </div>
         </div>
+
+
+
+        
         
 
 
