@@ -91,6 +91,8 @@
         .button {
             display: inline-block;
             padding: 2px 6px;
+            margin-left: 5px;
+            margin-right: 5px;
             background: teal;
             color: white;
             font-size: 1rem;
@@ -145,10 +147,14 @@
             font-size: 16px;
             margin-bottom: 10px;
             line-height: 1;
+            
         }
+
         .details strong {
-            font-weight: 600;  
+            font-weight: 800;  
         }
+
+
 
         .whatsapp-icon {
         font-size: 16px;
@@ -197,6 +203,55 @@
             transition: color 0.3s, transform 0.3s;
         }
 
+
+
+
+
+
+
+        /* pdf */
+        .pdf-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        background-color: #ffffff;
+        padding: 20px;
+        /* border: 1px solid #ccc; */
+        padding: 20px;
+        /* margin-bottom: 10px; */
+        /* border-radius: 8px; */
+        /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+        }
+
+        .pdf-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 49%; /* Adjust for spacing between the two PDFs */
+        }
+
+        .pdf-viewer {
+        width: 100%;
+        height: 400px; /* Adjust height as needed */
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px blue;
+        }
+
+        .caption {
+        margin-top: 10px;
+        font-size: 24px;
+        font-weight: 800;
+        color: #555;
+        text-align: center;
+        }
+
+        @media (max-width: 768px) {
+        .pdf-box {
+            width: 100%; /* Stack PDFs on smaller screens */
+        }
+        }
        
         
         
@@ -267,13 +322,32 @@
                 <p><strong>Conference:</strong> Advances in Neural Information Processing Systems (NeurIPS)</p>
             </div>
             <div class="project_info">
-                <h3>Summary <a href="" class="button" download=""><i>PPT</i></a></h3>
+                <h3>Summary <a href="" class="button" download=""><i>PPT</i> <a href="../src/bibtex/AttentionIsAllYouNeed.bib" class="button" download="AttentionIsAllYouNeed.bib"><i>Bibtex</i></a></a></h3>
                 <p>This paper introduces the Transformer architecture, which relies entirely on self-attention mechanisms to process sequences. It eliminates the need for recurrence, making it highly parallelizable and efficient for tasks like machine translation.</p>
                 <h4>Keywords:</h4>
                 <p><i>Transformer, Self-Attention, Sequence-to-Sequence Learning, Neural Networks</i></p>
-                <h3><i class="fas fa-quote-left citation-icon"></i> Cite <a href="../src/bibtex/AttentionIsAllYouNeed.bib" class="button" download="AttentionIsAllYouNeed.bib"><i>Bibtex</i></a></h3>
+                
             </div>
+            <div class="details">
+                <p><strong>Follow up papers:</strong> 
+                    <ol style="margin: 20px;">
+                        <li>2018</li>
+                        
+                    </ol>
+                
+                
+                </p>
+                 <p><strong>Pre-Requisite papers:</strong>
+                    <ol style="margin: 20px;">
+                        <li>2015</li>
+                        
+                    </ol>
+ 
+                </p>
+            </div> 
         </div>
+
+
 
 
 
@@ -281,21 +355,116 @@
 
         <div class="project">
             <div class="title">
-                <h1 id="AttentionIsAllYouNeed">Attention is All You Need</h1>
+                <h1 id="AttentionIsAllYouNeed">Neural Machine Translation by Jointly Learning to Align and Translate</h1>
             </div>
             <div class="details">
-                <p><strong>Authors:</strong> Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin</p>
-                <p><strong>Publication Year:</strong> 2017</p>
-                <p><strong>Conference:</strong> Advances in Neural Information Processing Systems (NeurIPS)</p>
+                <p><strong>Authors:</strong> Dzmitry Bahdanau, KyungHyun Cho, Yoshua Bengio</p>
+                <p><strong>Publication Year:</strong> 2013</p>
+                <p><strong>Conference:</strong>International Conference on Learning Representations</p>
             </div>
             <div class="project_info">
-                <h3>Summary <a href="" class="button" download=""><i>PPT</i></a></h3>
+                <h3>Summary <a href="" class="button" download=""><i>PPT</i> <a href="../src/bibtex/AttentionIsAllYouNeed.bib" class="button" download="AttentionIsAllYouNeed.bib"><i>Bibtex</i></a></a></h3>
                 <p>This paper introduces the Transformer architecture, which relies entirely on self-attention mechanisms to process sequences. It eliminates the need for recurrence, making it highly parallelizable and efficient for tasks like machine translation.</p>
                 <h4>Keywords:</h4>
                 <p><i>Transformer, Self-Attention, Sequence-to-Sequence Learning, Neural Networks</i></p>
-                <h3><i class="fas fa-quote-left citation-icon"></i> Cite <a href="../src/bibtex/AttentionIsAllYouNeed.bib" class="button" download="AttentionIsAllYouNeed.bib"><i>Bibtex</i></a></h3>
+                
+            </div>
+            <div class="details">
+                <p><strong>Follow up papers:</strong> 
+                    <ol style="margin: 20px;">
+                        <li>2018</li>
+                        
+                    </ol>
+                
+                
+                </p>
+                 <p><strong>Pre-Requisite papers:</strong>
+                    <ol style="margin: 20px;">
+                        <li>2015</li>
+                        
+                    </ol>
+                
+                
+                </p>
+            </div> 
+        </div>
+
+      
+
+
+
+
+
+        <div class="project">
+            <div class="pdf-container">
+                <div class="pdf-box">
+                  <embed src="../src/pdf/ml.pdf" type="application/pdf" class="pdf-viewer" />
+                  <p class="caption">Deep Learning</p>
+                </div>
+                <div class="pdf-box">
+                  <embed src="../src/pdf/ml.pdf" type="application/pdf" class="pdf-viewer" />
+                  <p class="caption">Machine Learning</p>
+                </div>
+                <!-- <div class="pdf-box">
+                    <embed src="../src/pdf/ml.pdf" type="application/pdf" class="pdf-viewer" />
+                    <p class="caption">Second PDF: Description or Title</p>
+                </div> -->
+            </div>
+            
+        </div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+        <div class="project">
+            <div class="title">
+                <h1 id="AttentionIsAllYouNeed">Disclaimer, Assumptions, Pre-requisites, Open to Your Suggestions</h1>
+            </div>
+            <div class="details">
+                <p><strong style="color: #007bff;">Disclaimer:</strong> All the research paper summaries reflect 
+                    my <strong>personal interpretations and analyses</strong> based on my current level of 
+                    understanding. I acknowledge that there may be alternative perspectives
+                     or ways to interpret these works. I warmly welcome your thoughts, 
+                     interpretations, and analyses through correspondence—I would be 
+                     delighted to engage with your insights and viewpoints.  
+                </p>
+                <!-- <p><strong>Assumptions:</strong> 2017</p> -->
+                <p><strong style="color: #007bff;">Pre-requisites:</strong> There are no prerequisites or prior 
+                    knowledge required to explore the research paper summaries or 
+                    blogs/reviews on this site. However, a foundational understanding of 
+                    concepts in Artificial Intelligence, Machine Learning, Deep Learning, 
+                    and Neural Networks can enhance your comprehension of the research 
+                    summaries and certain technical blogs/reviews. Efforts have been made 
+                    to present the content in a clear and accessible manner, ensuring that 
+                    readers can easily grasp the key concepts. Thank you!
+                </p>
+
+
+                <p><strong style="color: #007bff;">Open to Your Suggestions</strong>I sincerely welcome your valuable 
+                    suggestions, corrections, or the opportunity to discuss any material 
+                    featured on this website. Your feedback and insights are greatly 
+                    appreciated! Please reach out to me on <a href="mailto:shanku62_scs@jnu.ac.in" class="email-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a> <a href="mailto:spatel280400@gmail.com" class="email-icon">
+                        <i class="fa-solid fa-envelope"></i> 
+                    </a> <a href="https://wa.me/9569770695" target="_blank" class="whatsapp-icon">
+                        <i class="fa-brands fa-whatsapp"></i>
+                      </a> </p>
             </div>
         </div>
+
+
+
+        
 
 
         
