@@ -80,6 +80,8 @@
             transition: color 0.3s, transform 0.3s;
         }
 
+        
+
 
         /* Page Content */
         #content {
@@ -115,13 +117,43 @@
             font-weight: 800;
             color: #007bff;
         }
-        .research-paper-category ul {
-            list-style: none;
+        .research-paper-category ol {
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
         .research-paper-category li {
             font-size: 16px;
             line-height: 1.6;
             margin-bottom: 8px;
+            color: #007bff;
+        }
+        .research-paper-category strong {
+            color: teal;
+        }
+        .research-paper-category i {
+            color:red
+        }
+        .research-paper-category a i {
+            color:blue;
+        }
+        .button {
+            display: inline-block;
+            padding: 2px 6px;
+            background:white;
+            color: blue;
+            font-size: .6rem;
+            font-weight: 200;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+        }
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            
         }
         
         /* PPTs and Codes */
@@ -261,76 +293,116 @@
                 <!-- Natural Language Processing -->
                 <div class="research-paper-category">
                     <h4>Natural Language Processing</h4>
-                    <ul>
-                        <li>BPE Tokenizer</li>
-                        <li>SentencePiece</li>
-                        <li>Word2vec</li>
-                        <li>GloVe</li>
-                        <li>Attention is All You Need</li>
-                        <li>Vision Transformer</li>
-                        <li>BERT</li>
-                        <li>SentenceBERT</li>
-                        <li>GPT</li>
-                        <li>VisualBERT</li>
-                        <li>VisualGPT</li>
-                        <li>CLIP</li>
-                        <li>VerTex</li>
-                        <li>ConVIRT</li>
-                        <li>Sequence to Sequence Learning with Neural Networks (Ilya Sutskever et al.)</li>
-                        <li>Long Short Term Memory</li>
-                        <li>Neural Machine Translation By Jointly Learning to Align and Translate</li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+                    <ol>
+                        <li>
+                            <strong>
+                                 Sequence to Sequence Learning with Neural Networks   
+                            </strong>
+                            <i> 
+                                Ilya Sutskever et al.
+                            </i>
+                            <a href="" class="button" download=""><i>Download</i></a>
+                            <a href="" class="button" download=""><i>Summary</i></a>      
+                        </li>
+
+
+
+                        <li><strong>  Long Short Term Memory       </strong><i>  Hochreiter et al.,      </i>      </li>
+                        <li><strong>   Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modelling      </strong><i>  Chung et al.,      </i>      </li>
+                        <li><strong> On the Properties of Neural Machine Translation: Encoder-Decoder Approaches         </strong><i>   Cho et al.,     </i>      </li>
+                        <li><strong>  Boosting Image Captioning with Attributes       </strong><i>  Yao et al.,      </i>      </li>
+                        <li><strong> Long Short Term Memory for Machine Reading        </strong><i>  Cheng et al.,      </i>      </li>
+                        <li><strong> Neural Machine Translation by Jointly Learning to Align and Translate        </strong><i>  Bahdanau et al.,      </i>  ICLR 2015    </li>
+                        <li><strong>  BLEU Score: a Method for Automatic Evaluation of Machine Translation       </strong><i>  Papineni at al.,      </i>  ACL 2002    </li>
+                        <li><strong>  Sequence to Sequence Learning with Neural Networks       </strong><i>  Sutskever et al.,       </i> NeurIPS 2014     </li>
+                        <li><strong> Semi-supervised Sequence Learning        </strong><i> Dai et al.,        </i>  NeurIPS 2015    </li>
+                        <li><strong>    Universal Language Model Fine-Tuning for Text Classification     </strong><i> Howard et al.,       </i>  ACL 2018    </li>
+                        <li><strong>   Deep contexualized word representation      </strong><i>  Peters et al.,      </i> ACL 2018     </li>
+                        <li><strong> Distributed Representation of Word and Phrases and their Compositionality        </strong><i>   Mikolov et al.,      </i>  NeurIPS 2013    </li>
+                        <li><strong>  An Introduction to Vision Language Modelling       </strong><i>  Bordes et al.,       </i> Meta 2024      </li>
+                        <li><strong>  Large Language Models: A Survey       </strong><i>   Minaee et al.,     </i> arXive 2024     </li>
+                        <li><strong>  Deep Learning Approaches on Image Captioning: A Review       </strong><i>  Gandhi et al.,      </i> arXive 2023     </li>
+                        <li><strong> Don't Stop Pretraining: Adapt Language Models to Domains and Tasks        </strong><i> Gururangan et al.,       </i> ACL 2020     </li>
+                        <li><strong>    A Simple Framework for Contrastive Learning of Visual Representations     </strong><i>  Chen at al.,      </i>  ICML 2020    </li>
+                        <li><strong>  Contrastive Learning of Medical Visual Representation from Paired Images and Text       </strong><i> Zhang et al.,       </i>ICLR 2021      </li>
+                        <li><strong>     VirTex Learning Representations from Textual Annotations    </strong><i>  Desai et al.,      </i> CVPR 2020     </li>
+                        <li><strong> Efficient Estimation of Word Representations in Vector Space        </strong><i> Mokolov et al.,       </i> 2013      </li>
+                        <li><strong>  SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural text Processing       </strong><i>  Kudo et al.,      </i>      </li>
+                        <li><strong> Neural Machine Translation of Rare Words with Subword Units         </strong><i>  Sennrich et al.,       </i>      </li>
+                        <li><strong>  Google's Neural Machine translation System: Bridging the Gap between Human and Machine Translation       </strong><i> Wu et al.,       </i>      </li>
+                        <li><strong>  Learning Transferable Visual Models From Natural Language Supervision       </strong><i>  Radford et al.,       </i> ICML 2021     </li>
+                        <li><strong>   ViLBERT: Pretraining Task-Agnostic Visiolinguistic Representations for Vision-and-Language Tasks      </strong><i>   Lu et al.,     </i>      </li>
+                        <li><strong>  Swin Transformer: Hierarchical Vision Transformer using Shifted Windows       </strong><i>  Liu et al.,      </i>   ICCV 2021   </li>
+                        <li><strong>  VisualGPT: Data-efficient Adaption of Pretrained Language Models for Image Captioning       </strong><i>  Chen et al.,      </i> CVPR 2022     </li>
+                        <li><strong>  VisualBERT: A Simple and Performant Baseline for Vision and Language       </strong><i> Li et al.,       </i>      </li>
+                        <li><strong>  Improving Language Understanding by Generative Pre-Training       </strong><i>  Radford      </i>      </li>
+                        <li><strong>  BERT: Pre-training of Deep Bidirectional Trandformers for Language Understanding      </strong><i> Delvin et al.,       </i>  ACL 2018    </li>
+                        <li><strong>   BART: Denoiding Sequence-to-Sequence Pre-training for Natural Language Generation, Translation,and Comprehension      </strong><i>  Lewis et al.,      </i>   ACL 2020   </li>
+                        <li><strong>   RoBARTa: A Robustly Optimized BERt Pretraining Approach      </strong><i> Liu et al.,       </i>      </li>
+                        <li><strong> Exploring the Limits of Transfer learning with a Unified Text-to-Text Transformer        </strong><i>   Raffel et al.,     </i>      </li>
+                        <li><strong>   Large Models are Unsupervised Multitask Learners      </strong><i>   Radford et al.,      </i>      </li>
+                        <li><strong>  Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks       </strong><i> Reimers et al.,       </i>      </li>
+                        <li><strong>  DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter       </strong><i> Sanh et al.,       </i>      </li>
+                        <li><strong>  DeBERTa: Decoding-Enhanced BERT with Disentangled Attention       </strong><i> He at al.,       </i>      </li>
+                        <li><strong> DeBERTa v3: Improving DeBERTa using ELECTRA-style Pretraining with Gradient Disentangled Embedding Sharing        </strong><i> He et al.,       </i>      </li>
+                        <li><strong>  GLU Variants Improve Transformers       </strong><i> Shazeer et al.,       </i>      </li>
+                        <li><strong>   CLIPText: A New Paradigm for Zero-Shot Text Classification      </strong><i>     Qin et al.,   </i>      </li>
+                        <!-- <li><strong>         </strong><i>        </i>      </li>
+                        <li><strong>         </strong><i>        </i>      </li>
+                        <li><strong>         </strong><i>        </i>      </li>
+                         -->
+                        
+                    </ol>
                 </div>
                 <div class="research-paper-category">
                     <h4>Computer Vision</h4>
-                    <ul>
-                        <li>LeNet</li>
-                        <li>AlexNet</li>
-                        <li>ZFNet</li>
-                        <li>ResNet</li>
-                        <li>GoogLeNet</li>
-                        <li>SENet</li>
-                        <li>UNet</li>
-                        <li>MobileNet</li>
-                        <li>EfficientNet</li>
-                        <li>DenseNet</li>
-                        <li>VGGNet</li>
-                        <li>Network In Network</li>
-                        <li>PixelCNN</li>
-                        <li>PixelRNN</li>
-                        <li>3D Convolutional Neural Networks for Human Action Recognition</li>
-                        <li>Two-Stream Convolutional Networks for Action Recognition in Videos</li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+                    <ol>
+                        <li><strong>Histogram of Oriented Gradients for Human Detection </strong><i>Dalal et al., </i>      </li>
+                        <li><strong>Rapid Object Detection using Gradient Boosted Cascade of Simple Features </strong><i>Viola et al.,        </i>      </li>
+                        <li><strong>  Mask R-CNN       </strong><i> He et al.,       </i>      </li>
+                        <li><strong>  Deep Lab       </strong><i>  Chen et al.,      </i>      </li>
+                        <li><strong> Hollywood in Homes        </strong><i> Sigurdsson et al.,        </i>      </li>
+                        <li><strong> Fully Convolutional Network for Semantic Segmentation   </strong><i> Long et al.,        </i>      </li>
+                        <li><strong>    Show,Attend and Tell: Neural Image Caption Generation with Visual Attention     </strong><i> Xu at al.,       </i>   ICML 2015   </li>
+                        <li><strong> Deep Visual-Semantic Alignment for generating Image Description        </strong><i> Karpathy et al.,        </i>      </li>
+                        <li><strong>   3D Convolutional Neural Networks for Human Action Recognition      </strong><i> Ji et al.,        </i>      </li>
+                        <li><strong> Neural Baby Talk        </strong><i>  Lu at al.,      </i>  CVPR    </li>
+                        <li><strong> Long Term Recurrent Convolutional Network for Visual Recognitiona and Description        </strong><i>  Donahue et al.,      </i>      </li>
+                        <li><strong>  Show and Tell: A Neural Image Caption Generator       </strong><i> Vinyals et al.,       </i>      </li>
+                        <li><strong>  U-Net: Convolutional Networks for Biomedical Image Segmentation       </strong><i> Ronneberger et al.,       </i>      </li>
+                        <li><strong> Visualizing and Understanding Convolutionsal Networks        </strong><i> Zeiler et al.,       </i>  ECCV 2013    </li>
+                        <li><strong>   MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications      </strong><i> Howard et al.,       </i>      </li>
+                        <li><strong>  Gradient-Based Learing Applied to Document Recognition      </strong><i> LeCunn et al.,       </i> 1998     </li>
+                        <li><strong>  Deep Residual Learning for Image Recognition       </strong><i> He et al.,       </i>      </li>
+                        <li><strong>   Going Deeper with Convolutions      </strong><i> Szegedy et al.,       </i>      </li>
+                        <li><strong> Very Deep Convolutional Networks for Large Scale Image Recognition        </strong><i> Simonyan et al.,       </i> 2015     </li>
+                        <li><strong> Delving Deep into Rectifiers: Surpassing Human-Level Performance on ImageNet Classification        </strong><i>  He et al.,      </i>      </li>
+                        <li><strong> ImageNet Classification with Deep Convolutional Neural Networks        </strong><i> Krizhevsky et al.,       </i> 2012     </li>
+                        <!-- <li><strong>         </strong><i>        </i>      </li>
+                        <li><strong>         </strong><i>        </i>      </li>
+                        <li><strong>         </strong><i>        </i>      </li>
+                        <li><strong>         </strong><i>        </i>      </li>
+                        <li><strong>         </strong><i>        </i>      </li>
+                        <li><strong>         </strong><i>        </i>      </li>
+                        <li><strong>         </strong><i>        </i>      </li>
+                        <li><strong>         </strong><i>        </i>      </li> -->
+                        
+                    </ol>
                 </div>
                 <div class="research-paper-category">
                     <h4>Deep Learning</h4>
-                    <ul>
+                    <ol>
                         <li>The Road to Modern AI</li>
                         <li>The Summer Vision Project</li>
+                        <!-- <li></li>
                         <li></li>
                         <li></li>
                         <li></li>
                         <li></li>
                         <li></li>
                         <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+                        <li></li> -->
+                    </ol>
                 </div>
                 <!-- <div class="research-paper-category">
                     <h4>Programming</h4>
