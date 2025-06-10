@@ -216,6 +216,20 @@
             border-collapse: collapse;
             margin-top: 15px;
         }
+
+        .education-table a {
+        color:#4078c0;               /* Dark gray for a professional look */
+        text-decoration: none;     /* Remove default underline */
+        font-weight: 500;          /* Medium font weight */
+        transition: color 0.2s ease; /* Smooth transition */
+        }
+
+        a:hover,
+        a:focus {
+        color: #0056b3;            /* Subtle dark blue on hover/focus */
+        text-decoration: underline;/* Optional: add underline on hover */
+        }
+
         .education-table th,
         .education-table td {
             padding: 10px;
@@ -476,7 +490,7 @@
             </div>
             <!-- Bio Right -->
             <div class="profile-right">
-                <h3>Bio</h3>
+                <h3>About</h3>
                 <p>Greetings! I’m Shankul Patel, an aspiring <strong>AI researcher</strong>, currently pursuing
                      <strong>Master of Technology in Data Science</strong> (Batch 2023–2025) 
                     at <strong>Jawaharlal Nehru University (JNU)</strong>, New Delhi. I hold a Master of 
@@ -490,8 +504,8 @@
                     leveraging cutting-edge techniques to solve complex problems.
                 </p>
                 <p>
-                    Beyond research, I have a keen interest in <strong>teaching</strong> and <strong>sharing 
-                        knowledge</strong>. I frequently write blogs and literature reviews on AI's
+                    Beyond research, I have a keen interest in teaching and sharing 
+                        knowledge. I frequently write blogs and literature reviews on AI's
                      societal impact, fostering discussions about the transformative role 
                      of technology. My goal is to contribute meaningfully to the AI 
                      research community while inspiring others to embark on similar 
@@ -499,7 +513,7 @@
                 </p>
                 <p>Thank you for visiting my website! Feel free to explore 
                     my work and connect for potential collaborations. Here is my resume:
-                <a href="../src/shankul_patel_resume.pdf" download="My_Resume.pdf" class="download-btn">Download</a></p>
+                <a href="../src/spatelResume.pdf" download="My_Resume.pdf" class="download-btn">Resume</a></p>
             </div>
         </div>
 
@@ -574,7 +588,7 @@
                 <thead>
                     <tr>
                         <th>Qualification</th>
-                        <th>Degree</th>
+                        <th>Stream</th>
                         <th>Marks</th>
                         <th>University/Board</th>
                         <th>Year</th>
@@ -582,35 +596,37 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Master of Technology (MTech)</td>
+                        <td><b>Master of Technology (MTech) </b><br> <i>Supervisor:</i> <a href="https://www.jnu.ac.in/content/schand" target="_blank"> <b>Prof. Satish Chand</b> </a>
+                                    <br> <i>Dissertation Title:</i> <b>Multimodal Visual Understanding and Description</b></td>
                         <td>Data Science</td>
                         <td>8.41/9</td>
-                        <td>Jawaharlal Nehru University New Delhi</td>
+                        <td><a href="https://www.jnu.ac.in/node" target="_blank"> <b>Jawaharlal Nehru University, New Delhi</b> </a> </td>
                         <td>2023-2025</td>
                     </tr>
                     <tr>
-                        <td>Master of Computer Applications (MCA)</td>
+                        <td><b>Master of Computer Applications (MCA) </b><br> <i>Supervisor:</i> <a href="https://www.jnu.ac.in/content/poonamgoel" target="_blank"> <b>Dr. Poonam Agarwal</b>  </a>
+                                     <br> <i>Project Title:</i> <b>Self-Powered Sensor using TEH and ESP-32</b></td>
                         <td>Computer Science</td>
                         <td>7.13/9</td>
-                        <td>Jawaharlal Nehru University New Delhi</td>
+                        <td>Jawaharlal Nehru University, New Delhi</td>
                         <td>2021-2023</td>
                     </tr>
                     <tr>
-                        <td>Bachelor of Computer Applications (BCA)</td>
+                        <td><b>Bachelor of Computer Applications (BCA)</b></td>
                         <td>Computer Science</td>
                         <td>66.13%</td>
-                        <td>CSJM UNiversity Kanpur (PPN PG College)</td>
+                        <td>CSJM University Kanpur (PPN PG College)</td>
                         <td>2017-2020</td>
                     </tr>
                     <tr>
-                        <td>Intermediate</td>
+                        <td><b>Intermediate</b></td>
                         <td>Phy, Chem, Maths</td>
                         <td>82.4%</td>
                         <td>UP Board (BN Inter College)</td>
                         <td>2015-2017</td>
                     </tr>
                     <tr>
-                        <td colspan="2">High School</td>
+                        <td colspan="2"><b>High School</b></td>
                         <!-- <td>Computer Science</td> -->
                         <td>82.3%</td>
                         <td>UP Board</td>
@@ -622,7 +638,7 @@
 
         <!-- Other Qualifications Section -->
         <div class="other-qualifications">
-            <h3>Other Qualifications</h3>
+            <h3>National Level Exams</h3>
             <ul>
                 <li><strong>UGC NET with JRF (Junior Research Fellowship)</strong> (Computer Science and Applications); Dec 2024; Percentile: 99.9779354 (AIR 7)</li>
                 <li><strong>IIT GATE</strong> (Data Science and Artificial Intelligence); 2024, 2025</li>
@@ -727,27 +743,27 @@
             <h3>Correspondence Details</h3>
             <p><strong>Name:</strong> Shankul Patel</p>
             <p><strong>Lab:</strong> Multimodal Intelligence Research Lab (L203)</p>
-            <p><strong>School:</strong> School of Computational and Integrative Sciences</p>
+            <p><strong>School:</strong> School of Computer & Systems Sciences</p>
             <p><strong>University:</strong> Jawaharlal Nehru University, New Delhi</p>
 
             <p><strong>Mobile:</strong> (+91) 9569770695 <a href="https://wa.me/9569770695" target="_blank" class="whatsapp-icon">
                 <i class="fa-brands fa-whatsapp"></i>
               </a> </p>
 
-            <p><strong>Institutional email:</strong> <a href="mailto:shanku62_scs@jnu.ac.in" class="email-icon">shanku62_scs@jnu.ac.in
+            <!-- <p><strong>Institutional email:</strong> <a href="mailto:shanku62_scs@jnu.ac.in" class="email-icon">shanku62_scs@jnu.ac.in
                 <i class="fa-solid fa-envelope"></i>
-            </a></p>
+            </a></p> -->
 
             <p><strong>Personal email:</strong> <a href="mailto:spatel280400@gmail.com" class="email-icon">spatel280400@gmail.com
                 <i class="fa-solid fa-envelope"></i> 
             </a></p>
             
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/spatel2804" target="_blank" class="linkedin-icon">www.linkedin.com/in/spatel2804
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sp2804" target="_blank" class="linkedin-icon">www.linkedin.com/in/sp2804
                 <i class="fa-brands fa-linkedin"></i>
             </a></p>
-            <p><strong>GitHub:</strong> <a href="https://github.com/ShankulPatel" target="_blank" class="github-icon"> https://github.com/ShankulPatel
+            <!-- <p><strong>GitHub:</strong> <a href="https://github.com/ShankulPatel" target="_blank" class="github-icon"> https://github.com/ShankulPatel
                 <i class="fa-brands fa-github"></i>
-              </a> </p>
+              </a> </p> -->
         </div>
 
       
@@ -763,11 +779,11 @@
             <p>This website is under development.</p>
         </div>
         <div class="footer-links">
-            <a href="https://www.linkedin.com/in/spatel2804" target="_blank" class="linkedin-icon">
+            <a href="https://www.linkedin.com/in/sp2804" target="_blank" class="linkedin-icon">
                 <i class="fa-brands fa-linkedin"></i>
             </a> | 
 
-            <a href="mailto:shanku62_scs@gmail.com" class="email-icon">
+            <a href="mailto:spatel280400@gmail.com" class="email-icon">
                 <i class="fa-solid fa-envelope"></i>
             </a> |
 
