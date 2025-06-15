@@ -23,14 +23,15 @@
 
         /* Navigation Bar */
         #navbar {
+            position:fixed;
             list-style: none;
             display: flex;
             justify-content: center;
             background-color: #333;
             padding: 12px 0;
-            margin: 0;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             width: 100%;
+            z-index: 20;
         }
         #navbar li {
             margin: 0 25px;
@@ -88,6 +89,7 @@
         /* Name and Title Section */
         #name-title {
             text-align: center;
+            margin-top: 50px;
             margin-bottom: 30px;
         }
 
@@ -333,13 +335,6 @@
             flex: 1;
         }
 
-        .contriTalk {
-            height: 420px;
-            background-image: url(../src/contriTalk.jpg);
-            background-size: cover;
-        }
-
-       
         .activity-part h3 {
             font-size: 20px;
             font-weight: 800;
@@ -538,8 +533,8 @@
         <li><a href="index.html"><i class="fas fa-home home-icon"></i> Home</a></li>
         <li><a href="about.html"> <i class="fas fa-info-circle about-icon"></i> About</a></li>
         <!-- <li><a href="literature.html"><i class="fas fa-book literature-icon"></i> Literature</a></li>
-        <li><a href="research.html"><i class="fas fa-search research-icon"></i> Research</a></li>
-        <li><a href="blogs.html"> <i class="fas fa-pencil-alt blog-icon"></i> Blogs & Reviews</a></li> -->
+        <li><a href="research.html"><i class="fas fa-search research-icon"></i> Research</a></li> -->
+        <li><a href="blogs.html"> <i class="fas fa-pencil-alt blog-icon"></i> Blogs & Reviews</a></li> 
     </ul>
 
     <!-- Main Content -->
@@ -547,8 +542,8 @@
         <div id="content">
             <!-- New Name and Title Section -->
             <div id="name-title">
-                <h2>Shankul Patel <i>(he/him)</i></h2>
-                <p>AI Researcher</p>
+                <h2>Shankul Patel (शांकुल पटेल) <i>(he/him)</i></h2>
+                <p>PhD Scholar</p>
             </div>
             <!-- Photos and Announcements Section -->
             <div id="photos-announcements">
@@ -636,7 +631,7 @@
                         <div class="ad-content">
                             <h1>Jawaharlal Nehru Uninversity</h1>
                             <!-- <p>An Institution</p> -->
-                            <a href="" class="cta-button">Learn More</a>
+                            <a href="https://www.jnu.ac.in/node" class="cta-button" target="_blank">Learn More</a>
                         </div>
                     </div>
                     <!-- <div class="ad-container">
@@ -813,18 +808,18 @@
 
 
             <!-- Uncomment the following code to add the events -->
-            <div id="activities-participation">
-                <div class="activity-part contriTalk">
-                    <!-- <h3>Contributed Talk in One-day Workshop on MEMS, NEMS and Microfluids @ IIT Delhi (Feb 25, 2023): Glucose Measurement using Arduino UNO Interfaced with ESP-01 Wi-Fi Module Having PDMS Cavity Integrated on Top</h3> -->
-                    <!-- <p>Experience: Participated in the Tech Conference 2024 where innovative discussions, workshops, and networking took place.</p> -->
-                    <!-- <div class="photo-grid">
-                        <img src="../src/event1.jpg" alt="Event 1">
-                        <img src="../src/event2.jpg" alt="Event 2">
-                        <img src="../src/event3.jpg" alt="Event 3">
-                    </div> -->
-                </div>
+            <!-- <div id="activities-participation"> -->
+                <!-- <div class="activity-part contriTalk">
+                    <h3>Contributed Talk in One-day Workshop on MEMS, NEMS and Microfluids @ IIT Delhi (Feb 25, 2023): Glucose Measurement using Arduino UNO Interfaced with ESP-01 Wi-Fi Module Having PDMS Cavity Integrated on Top</h3>
+                    <p>Experience: Participated in the Tech Conference 2024 where innovative discussions, workshops, and networking took place.</p>
+                    <div class="photo-grid">
+                        <img src="../src/contriTalk.jpg" alt="Presentation in contributed talk at IIT Delhi"> -->
+                        <!-- <img src="../src/event2.jpg" alt="Event 2">
+                        <img src="../src/event3.jpg" alt="Event 3"> -->
+                    <!-- </div>
+                </div> -->
 
-                <div class="activity-part">
+                <!-- <div class="activity-part"> -->
                     <!-- <h3>Event: AI Workshop 2023</h3>
                     <p>Experience: Engaged in hands-on sessions and discussions on the latest advancements in AI at the AI Workshop 2023.</p> -->
                     <!-- <div class="photo-grid"> -->
@@ -832,8 +827,8 @@
                         <img src="../src/workshop2.jpg" alt="Workshop 2">
                         <img src="../src/workshop3.jpg" alt="Workshop 3"> -->
                     <!-- </div> -->
-                </div>
-            </div>
+                <!-- </div> -->
+            <!-- </div> -->
             <!--Event ends here -->
 
 
@@ -923,7 +918,7 @@
             // Auto-slide functionality
             setInterval(() => {
               updateSlider(currentIndex + 1);
-            }, 10000); // Change slide every 3 seconds
+            }, 5000); // Change slide every 3 seconds
         
             // Initialize the slider
             updateSlider(currentIndex);

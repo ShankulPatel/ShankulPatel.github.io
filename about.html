@@ -23,6 +23,8 @@
 
         /* Navigation Bar */
         #navbar {
+            position:fixed;
+            z-index: 20;
             list-style: none;
             display: flex;
             justify-content: center;
@@ -89,6 +91,7 @@
         /* Main Content */
         #content {
             padding: 30px 5%;
+            
         }
 
         /* Profile and Bio Layout */
@@ -97,6 +100,7 @@
             justify-content: space-between;
             margin-bottom: 20px;
             flex-wrap: wrap;
+            margin-top: 60px;
         }
         .profile-left {
             width: 20%;
@@ -142,8 +146,8 @@
         display: inline-block;
         padding: 3px 8px;
         font-size: 16px;
-        color: #fff;
-        background-color: #007bff;
+        color:#004182;
+        /* background-color: #007bff; */
         border: none;
         border-radius: 5px;
         text-decoration: none;
@@ -153,11 +157,13 @@
 
         .download-btn:hover {
         background-color: #0056b3;
+        color: white;
+        text-decoration: none;
         }
 
-        .download-btn:active {
+        /* .download-btn:active {
         background-color: #003f7f;
-        }
+        } */
 
         /* Skills Section */
         .skills-section {
@@ -474,8 +480,8 @@
         <li><a href="index.html"><i class="fas fa-home home-icon"></i> Home</a></li>
         <li><a href="about.html"> <i class="fas fa-info-circle about-icon"></i> About</a></li>
         <!-- <li><a href="literature.html"><i class="fas fa-book literature-icon"></i> Literature</a></li>
-        <li><a href="research.html"><i class="fas fa-search research-icon"></i> Research</a></li>
-        <li><a href="blogs.html"> <i class="fas fa-pencil-alt blog-icon"></i> Blogs & Reviews</a></li> -->
+        <li><a href="research.html"><i class="fas fa-search research-icon"></i> Research</a></li> -->
+        <li><a href="blogs.html"> <i class="fas fa-pencil-alt blog-icon"></i> Blogs & Reviews</a></li> 
     </ul>
 
     <!-- Main Content -->
@@ -503,14 +509,14 @@
                     I am passionate about exploring the intersection of these domains and 
                     leveraging cutting-edge techniques to solve complex problems.
                 </p>
-                <p>
+                <!-- <p>
                     Beyond research, I have a keen interest in teaching and sharing 
                         knowledge. I frequently write blogs and literature reviews on AI's
                      societal impact, fostering discussions about the transformative role 
                      of technology. My goal is to contribute meaningfully to the AI 
                      research community while inspiring others to embark on similar 
                      journeys.
-                </p>
+                </p> -->
                 <p>Thank you for visiting my website! Feel free to explore 
                     my work and connect for potential collaborations. Here is my resume:
                 <a href="../src/spatelResume.pdf" download="My_Resume.pdf" class="download-btn">Resume</a></p>
